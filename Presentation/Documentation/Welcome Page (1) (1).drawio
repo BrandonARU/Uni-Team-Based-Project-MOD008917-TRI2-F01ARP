@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 OPR/126.0.0.0" version="29.3.8">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 OPR/126.0.0.0" version="29.3.7">
   <diagram name="Page-1" id="ICBLxOImdYVToqony-m4">
-    <mxGraphModel dx="4336" dy="1509" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3322" dy="1385" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -181,13 +181,13 @@
         <mxCell id="HSx5ykRE7FTQOGX00xga-85" parent="HSx5ykRE7FTQOGX00xga-84" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=25;fontStyle=1;fontFamily=Tahoma;fontColor=#000000;strokeColor=#006600;strokeWidth=4;" value="What You Get" vertex="1">
           <mxGeometry height="60" width="635.6501148105625" x="416.8197474167623" as="geometry" />
         </mxCell>
-        <mxCell id="HSx5ykRE7FTQOGX00xga-86" parent="HSx5ykRE7FTQOGX00xga-84" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=25;fontStyle=1;fontFamily=Tahoma;fontColor=#000000;strokeColor=#006600;strokeWidth=4;" value="we will explain everything" vertex="1">
+        <mxCell id="HSx5ykRE7FTQOGX00xga-86" parent="HSx5ykRE7FTQOGX00xga-84" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=25;fontStyle=1;fontFamily=Tahoma;fontColor=#000000;strokeColor=#006600;strokeWidth=4;" value="Video Lessons&lt;div&gt;Full explanation&lt;/div&gt;" vertex="1">
           <mxGeometry height="361" width="360" x="-70" y="149" as="geometry" />
         </mxCell>
-        <mxCell id="HSx5ykRE7FTQOGX00xga-87" parent="HSx5ykRE7FTQOGX00xga-84" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=25;fontStyle=1;fontFamily=Tahoma;fontColor=#000000;strokeColor=#006600;strokeWidth=4;" value="games" vertex="1">
+        <mxCell id="HSx5ykRE7FTQOGX00xga-87" parent="HSx5ykRE7FTQOGX00xga-84" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=25;fontStyle=1;fontFamily=Tahoma;fontColor=#000000;strokeColor=#006600;strokeWidth=4;" value="Quizzzes" vertex="1">
           <mxGeometry height="361" width="360" x="310" y="149" as="geometry" />
         </mxCell>
-        <mxCell id="HSx5ykRE7FTQOGX00xga-88" parent="HSx5ykRE7FTQOGX00xga-84" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=25;fontStyle=1;fontFamily=Tahoma;fontColor=#000000;strokeColor=#006600;strokeWidth=4;" value="&lt;div&gt;contact us any time&lt;/div&gt;" vertex="1">
+        <mxCell id="HSx5ykRE7FTQOGX00xga-88" parent="HSx5ykRE7FTQOGX00xga-84" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontSize=25;fontStyle=1;fontFamily=Tahoma;fontColor=#000000;strokeColor=#006600;strokeWidth=4;" value="Games&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="361" width="390" x="680" y="149" as="geometry" />
         </mxCell>
         <mxCell id="HSx5ykRE7FTQOGX00xga-89" parent="HSx5ykRE7FTQOGX00xga-84" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#006600;fillColor=#FFFFFF;fontSize=25;fontStyle=1;fontFamily=Tahoma;fontColor=#000000;strokeWidth=4;" value="Progress Tracker" vertex="1">
