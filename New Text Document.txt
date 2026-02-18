@@ -1,0 +1,186 @@
+
+
+
+
+
+
+
+    <!--Body-->
+    <main id="indexMain">
+        <!--First Section of Content-->
+        <section id="indexSec1Border" class="indexContentBorder">
+            <div id="indexSec1">
+                <!--Left area-->
+                <div id="indexSec1LBorder">
+                    <div id="indexSec1L">
+                        <div id="indexSec1LTitleBorder" class="indexContentBorder">
+                            <div id="indexSec1LTitle">
+                                <h3> About Us</h3>
+                            </div>
+                        </div>
+                        <div id="indexSec1LContentBorder" class="indexContentBorder">
+                            <div id="indexSec1Lcontent">
+                                <p> What are we all about? Making sense of Maths! We believe that every learner is
+                                    capable of understanding and thriving in mathematics. Our mission is rooted in the
+                                    belief that math is not just a set of procedures to memorize, but a meaningful,
+                                    connected body of ideas that anyone can make sense of. We provide high-quality
+                                    resources designed to support both educators and students in unlocking this
+                                    potential. By engaging learners as active participants in their own learning, we
+                                    foster deep conceptual understanding alongside fluency. Our approach empowers
+                                    students to think critically, reason confidently, and see themselves as capable and
+                                    competent mathematical thinkers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Right area-->
+                <div id="indexSec1RBorder">
+                    <div id="indexSec1R">
+                        <div id="indexSec1RContent">
+                            <video id="videoWelcomePage">
+                                <source src="Videos/video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!--Second Section of Content-->
+        <section id="indexSec2Border" class="indexContentBorder">
+            <div id="indexSec2">
+                <!--Left area-->
+                <div id="indexSec2RBorder">
+                    <div id="indexSec2R">
+                        <div id="indexSec2RContent">
+                            <video id="videoWelcomePage">
+                                <source src="Videos/video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Right area-->
+            <div id="indexSec1LBorder">
+                <div id="indexSec1L">
+                    <div id="indexSec2LTitleBorder" class="indexContentBorder">
+                        <div id="indexSec2LTitle">
+                            <h3> Our Mission</h3>
+                        </div>
+                    </div>
+                    <div id="indexSec2LContentBorder" class="indexContentBorder">
+                        <div id="indexSec2Lcontent">
+                            <p> We use targeted, strengths-based instruction and assessment to ensure that every
+                                student builds a strong foundation in essential mathematical skills and concepts.
+                                Rather than focusing solely on gaps, we identify and build upon what students
+                                already know, helping them make meaningful connections and steady progress. Our
+                                flexible program is designed to complement any core math curriculum, making it easy
+                                for schools and teachers to integrate our resources into their existing
+                                instructional frameworks. This adaptability allows educators to enhance their
+                                teaching while meeting diverse student needs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Third Section of Content-->
+        <section id="indexSec3Border" class="indexContentBorder">
+            <div id="indexSec3">
+                <!--Left area-->
+                <div id="indexSec3LBorder">
+                    <div id="indexSec3L">
+                        <div id="indexSec3LTitleBorder" class="indexContentBorder">
+                            <div id="indexSec3LTitle">
+                                <h3> About Us</h3>
+                            </div>
+                        </div>
+                        <div id="indexSec3LContentBorder" class="indexContentBorder">
+                            <div id="indexSec3Lcontent">
+                                <p> Our skills-building program is thoughtfully centered around the classroom calendar,
+                                    creating consistent, structured opportunities for practice and growth throughout the
+                                    school year. Through a variety of engaging “workouts,” students revisit and apply
+                                    important skills in new and meaningful contexts. These experiences promote
+                                    retention, deepen understanding, and encourage students to transfer their knowledge
+                                    across different mathematical situations. By embedding practice into the rhythm of
+                                    the classroom, we help make skill development both purposeful and manageable.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Right area-->
+                <div id="indexSec3RBorder">
+                    <div id="indexSec3R">
+                        <div id="indexSec3RContent">
+                            <video id="videoWelcomePage">
+                                <source src="Videos/video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Fourth Section of Content-->
+        <section id="indexSec4Border" class="indexContentBorder">
+            <div id="indexSec4">
+
+
+                <!--Left area-->
+                <div id="indexSec4RBorder">
+                    <div id="indexSec4R">
+                        <div id="indexSec4RContent">
+                            <video id="videoWelcomePage">
+                                <source src="Videos/video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Right area-->
+        <div id="indexSec4LBorder">
+            <div id="indexSec4L">
+                <div id="indexSec1LTitleBorder" class="indexContentBorder">
+                    <div id="indexSec4LTitle">
+                        <h3> About Us</h3>
+                    </div>
+                </div>
+                <div id="indexSec4LContentBorder" class="indexContentBorder">
+                    <div id="indexSec4Lcontent">
+                        <p> We reinforce and extend grade-level learning by providing additional
+                            problem-solving opportunities and horizontal enrichment for all students. Rather
+                            than accelerating students beyond their grade level, we broaden and deepen their
+                            understanding within it. Our approach challenges learners to think flexibly, explore
+                            multiple strategies, and engage with rich mathematical tasks that promote reasoning
+                            and perseverance. The result is a learning environment where every student has the
+                            opportunity to grow, explore, and excel in mathematics.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+Math0ryx turns confusion into clarity through structured, step-by-step mastery of mathematics. Build unshakable foundations, sharpen problem-solving instincts, and think like a true mathematician. Interactive lessons, intelligent practice, and instant feedback accelerate real understanding — not memorization. Unlock the logic behind numbers and transform the way you learn, solve, and succeed.
