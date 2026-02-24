@@ -586,3 +586,59 @@
   box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
 }
 
+
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-image: url('../Images/Header/background-dark.png');
+    }
+}
+@media (prefers-color-scheme: dark) {
+
+  #indexSec1Lcontent {
+    background: #fffacd;           
+    color: #000000;                
+    border-color: #e6d88a;         
+  }
+
+  #indexSec3Content1Border,
+  #indexSec3Content2Border,
+  #indexSec3Content3Border,
+  #indexSec3Content4Border,
+  #indexSec3Content5Border {
+    background: #fffacd;           
+    border-color: #e6d88a;
+    color: #000000;
+  }
+
+  #indexSec5Content1Border,
+  #indexSec5Content2Border,
+  #indexSec5Content3Border,
+  #indexSec5Content4Border {
+    background: #fffacd;
+    border-color: #e6d88a;
+    color: #000000;
+  }
+#indexSec3SubtitleBorder {
+  background: #fffacd;
+    border-color: #e6d88a;
+    color: #000000;
+}
+
+ 
+  #indexSec3Content1Container p,
+  #indexSec3Content2Container p,
+  #indexSec3Content3Container p,
+  #indexSec3Content4Container p,
+  #indexSec3Content5Container p,
+  #indexSec5Content1Container p,
+  #indexSec5Content2Container p,
+  #indexSec5Content3Container p,
+  #indexSec5Content4Container p {
+    color: #000000;
+  }
+}

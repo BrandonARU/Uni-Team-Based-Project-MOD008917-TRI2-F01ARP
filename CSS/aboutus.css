@@ -105,6 +105,11 @@
   border: 1px solid #ddd;
 }
 
+
+
+.flip #indexSec1 { flex-direction: row-reverse; }
+.flip #indexSec1LTitleBorder { text-align: center; }
+
 /* Mobile phone screen */
 @media (max-width: 980px) {
   #indexSec1RBorder {
@@ -150,6 +155,7 @@
 
 
 
+ 
 
 
 
@@ -158,7 +164,10 @@
 
 
 
-/* SECTION 0 – final adjustments: wide text + more vertical space */
+
+
+
+
 
 #indexSec0Border {
     background: rgba(255, 255, 255, 0.34);
@@ -183,7 +192,7 @@
     margin: 0 auto;
     background: var(--green, #006600);
     border-radius: 32px;
-    padding: 5rem 6rem;                    /* base rectangle padding */
+    padding: 5rem 6rem;                    
     min-height: 52vh;
     box-shadow: 0 16px 50px rgba(0,0,0,0.35);
     transition: all 0.65s ease;
@@ -221,7 +230,7 @@
     position: absolute;
     inset: 0;
     margin: 0;
-    padding: 5.5rem 3.5rem 5.5rem 3.5rem;   /* ↑↑↑ big top/bottom, ↓↓↓ small sides */
+    padding: 5.5rem 3.5rem 5.5rem 3.5rem;    
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -231,8 +240,8 @@
     transform: translateY(40px);
     transition: opacity 0.8s ease 0.15s, transform 0.8s ease 0.15s;
     color: black;
-    font-size: clamp(0.95rem, 3.1vw, 1.95rem);  /* min 0.95rem as requested */
-    line-height: 1.68;                             /* desktop */
+    font-size: clamp(0.95rem, 3.1vw, 1.95rem);  
+    line-height: 1.68;                            
     text-align: center;
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -241,12 +250,11 @@
 
 .main-text p {
     margin: 0;
-    max-width: 92%;                            /* much wider – covers more of rectangle */
+    max-width: 92%;                           
     width: 100%;
     padding: 0 0.6rem;
 }
 
-/* Hover effect */
 #indexSec0MainBox:hover {
     background: radial-gradient(circle at center,
                                 #ffffff 0%,
@@ -265,8 +273,6 @@
     transform: translateY(0);
 }
 
-/* ──────────────────────────────────────────────── */
-/* RESPONSIVE – shrink font + tighten lines + reduce side padding */
 @media (max-width: 1100px) {
     #indexSec0MainBox {
         padding: 4.5rem 5.5rem;
@@ -283,7 +289,7 @@
         padding: 4rem 5rem;
     }
     .main-text {
-        padding: 4.5rem 2.5rem 4.5rem 2.5rem;   /* very small sides */
+        padding: 4.5rem 2.5rem 4.5rem 2.5rem;   
         font-size: clamp(0.95rem, 3.5vw, 1.65rem);
         line-height: 1.55;
     }
@@ -297,7 +303,7 @@
     .main-text {
         padding: 4rem 2rem 4rem 2rem;
         font-size: clamp(0.95rem, 3.9vw, 1.45rem);
-        line-height: 1.48;                      /* tighter but still WCAG-friendly */
+        line-height: 1.48;                     
     }
 }
 
@@ -309,7 +315,7 @@
         padding: 3rem 4rem;
     }
     .main-text {
-        padding: 3.8rem 1.8rem 3.8rem 1.8rem;   /* minimal sides, generous vertical */
+        padding: 3.8rem 1.8rem 3.8rem 1.8rem;  
         font-size: clamp(0.95rem, 4.4vw, 1.3rem);
         line-height: 1.45;
     }
@@ -323,9 +329,33 @@
     }
 }
 
+ 
+.main-heading {
+    position: relative;
+    z-index: 1;
+}
 
+ 
+.main-text {
+    z-index: 2;
+    color: #1a1a1a;            
+    background: transparent;   
+}
 
+#indexSec0MainBox {
+    transition: background 0.75s ease, box-shadow 0.4s ease;
+}
 
+#indexSec0MainBox {
+    cursor: pointer;
+}
+
+#indexSec0MainBox:hover {
+    background: radial-gradient(circle at center,
+                                #ffffff 0%,
+                                #ffffff 88%,
+                                #006600 100%);
+}
 
 
 
