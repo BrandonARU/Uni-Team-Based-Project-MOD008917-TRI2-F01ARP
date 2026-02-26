@@ -1,3 +1,6 @@
+
+/* this will be applied throughout the website for handling hamburger iin the navbar , fabContainer and dark-light mode through javascript*/ 
+
 function toggleHamburger() {
     const menu = document.getElementById('hamburgerMenu');
     menu.classList.toggle('active');
