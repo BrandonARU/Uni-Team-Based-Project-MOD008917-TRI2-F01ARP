@@ -1,12 +1,4 @@
-/* ============================================================
-   common.js  –  Math0ryx
-   1. Dark / Light mode toggle (persisted)
-   2. FAB – click + to open/close home, search, dark-mode in a row
-   3. Hamburger – click or hover opens purple dropdown
-   ============================================================ */
 
-
-/* ── 1. DARK / LIGHT MODE ─────────────────────────────────── */
 
 function applyTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
@@ -25,7 +17,6 @@ function toggleTheme() {
 })();
 
 
-/* ── 2. FAB ───────────────────────────────────────────────── */
 
 function buildFab() {
   const container  = document.querySelector('.fabContainer');
@@ -56,7 +47,6 @@ function buildFab() {
 
   document.getElementById('fabSettingsBtn').addEventListener('click', toggleTheme);
 
-  /* Toggle .open — CSS uses .fabContainer:not(.open) .fabOptions button { display:none } */
   mainBtn.addEventListener('click', (e) => {
     e.stopPropagation();
     const isOpen = container.classList.toggle('open');
@@ -75,7 +65,6 @@ function buildFab() {
 
 
 
-/* Called by onclick="toggleHamburger()" in your HTML */
 window.toggleHamburger = function () {
   const menu = document.getElementById('hamburgerMenu');
   if (!menu) return;
@@ -111,7 +100,6 @@ function buildHamburger() {
 }
 
 
-/* ── 4. INIT ──────────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
   buildFab();
   buildHamburger();
