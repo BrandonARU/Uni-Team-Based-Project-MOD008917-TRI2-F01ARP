@@ -1,0 +1,30 @@
+#lessonSection{
+    text-align: center;
+    width: 70%;
+}
+
+#lessonTitle{
+    text-align: center;
+}
+
+#quizContainer{
+
+}
+
+.questionDiv{
+    width: 70%;
+    background: var(--white-semi);
+
+}
+
+.questionHeader{
+
+}
+
+.questionMain{
+
+}
+
+.questionTextInput{
+    
+}
