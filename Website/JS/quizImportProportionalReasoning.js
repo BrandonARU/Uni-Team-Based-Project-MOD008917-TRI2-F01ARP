@@ -6,13 +6,23 @@ function fetchJson(){
 
 function processJson(json){
     let html = "";
+    let questionNo = 1;
 
     json.courses.forEach(object => {
         let htmlChunk = 
             `
-                  
+                        <div class="questionDiv">
+                            <h3 class="questionHeader">
+                                Question ${questionNo}
+                            </h3>
+                            <h4 class="questionMain">
+                                ${object.Question}
+                            </h4>
+                            <input class="questionTextInput" type="text">
+                            <li></li>
+                        </div>
             `;
-
+        questionNo = questionNo + 1;
         html = html + htmlChunk;
     })
 

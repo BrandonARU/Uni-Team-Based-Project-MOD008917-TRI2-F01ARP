@@ -1,6 +1,7 @@
 #lessonSection{
     text-align: center;
-    width: 70%;
+    width: 100%;
+    padding: 1%;
 }
 
 #lessonTitle{
@@ -9,10 +10,12 @@
 
 #quizContainer{
     text-align: center;
+    padding: 1%;
+    width: 100%;
 }
 
 .questionDiv{
-    width: 70%;
+    width: 100%;
     background: var(--white-semi);
 
 }
