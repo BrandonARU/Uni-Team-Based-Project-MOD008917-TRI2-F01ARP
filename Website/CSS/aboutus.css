@@ -12,6 +12,8 @@
   --cream:    #fffacd;
 }
 
+body.dark-mode { background-image: url('../Images/Header/background-dark.png'); }
+
 /*section1*/
 #indexSec1Border {
   background: rgba(255, 255, 255, 0.34); 
@@ -358,7 +360,13 @@
 }
 
 
+body.dark-mode
 
+{ 
+  
+  background-image: url('../Images/Header/background-dark.png'); 
+
+}
 
 
 

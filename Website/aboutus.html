@@ -7,12 +7,17 @@
         <title>Learn Maths and Have Fun</title>
         <meta name="description" content="Index page for Math0ryx website">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CSS/aboutus.css">
         <link rel="stylesheet" href="CSS/common.css">
-        <link rel="stylesheet" href="CSS/index.css">
     </head>
     <body>
         <!--Script declaration-->
-        <script src="js/common.js" defer></script> 
+        <script src="JS/index.js" async defer></script>
+        <script src="JS/common.js" async defer></script>
+       
+
+
+
         <!--Header-->
         <header id="headerMain">
             <div id="headerBorder">
@@ -30,12 +35,21 @@
                     <span></span>
                 </div>
 
-                <div id="hamburgerMenu">
-                    <a href="aboutus.html" class="headerNavButton">Abous Us</a>
-                    <a href="lessons.html" class="headerNavButton">Lessons</a>
-                    <a href="games.html" class="headerNavButton">Games</a>
-                    <a href="login.html" class="headerNavButton">LogIn</a>
+  <div class="hamburger" id="hamburgerIcon" onclick="toggleHamburger()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
+
+                <div id="hamburgerMenu">
+                    <div class="headerNavButton"><a href="aboutus.html"><input type="button" value="About us"></a></div>
+                    <div class="headerNavButton"><a href="lessons.html"><input type="button" value="Lessons"></a></div>
+                    <div class="headerNavButton"><a href="games.html"><input type="button" value="Games"></a></div>
+                    <div class="headerNavButton"><a href="login.html"><input type="button" value="LogIn"></a></div>
+                    <div class="headerNavButton"><a href="ourteam.html"><input type="button" value="OurTeam"></a></div>
+                    <div class="headerNavButton"><a href="contact.html"><input type="button" value="Contact"></a></div>
+                </div>
+
 
                 <div id="headerNavBarDiv">
                     <div class="headerNavButton" id="headerNavButton1">
@@ -75,14 +89,13 @@
 
         <!--Floating Button-->
         <div class="fabContainer">
-            <button class="fab" onclick="toggleFab()">+</button>
-            <div class="fabOptions">
-                <button onclick="alert('Home Clicked!')">🏠</button>
-                <button onclick="alert('Search Clicked!')">🔍</button>
-                <button onclick="alert('Settings Clicked!')">⚙️</button>
-            </div>
-        </div>
-
+  <button class="fab" onclick="toggleFab()">+</button>
+  <div class="fabOptions">
+    <button onclick="goHome()">🏠</button>
+    <button onclick="goSearch()">🔍</button>
+    <button onclick="toggleDark()">🌙</button>
+  </div>
+</div>
         <!--Body-->
         <main id="indexMain">
 
