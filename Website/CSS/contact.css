@@ -7,7 +7,7 @@
   --white-semi: rgba(255, 255, 255, 0.34);
 }
 
-
+body.dark-mode { background-image: url('../Images/Header/background-dark.png'); }
 /*section1 - intro (white/semi band)*/
 #contactSec1Border {
   background: var(--white-semi);
@@ -721,3 +721,12 @@
     color: #000000;
   }
 }
+
+
+body.dark-mode
+
+{ 
+  
+  background-image: url('../Images/Header/background-dark.png'); 
+
+}s

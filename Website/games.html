@@ -1,18 +1,24 @@
 <!doctype html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Learn Maths and Have Fun</title>
-        <meta name="description" content="Index page for Math0ryx website">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="CSS/common.css">
-        <link rel="stylesheet" href="CSS/index.css">
-    </head>
-    <body>
-        <!--Script declaration-->
-        <script src="js/common.js" defer></script> 
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn Maths and Have Fun</title>
+    <meta name="description" content="Index page for Math0ryx website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="CSS/common.css" />
+    <link rel="stylesheet" href="CSS/games.css" />
+  </head>
+  <body>
+    <!--Script declaration-->
+    <script src="JS/index.js" async defer></script>
+    <script src="JS/common.js" async defer></script>
+
+   
+
+
+
         <!--Header-->
         <header id="headerMain">
             <div id="headerBorder">
@@ -30,12 +36,21 @@
                     <span></span>
                 </div>
 
-                <div id="hamburgerMenu">
-                    <a href="aboutus.html" class="headerNavButton">Abous Us</a>
-                    <a href="lessons.html" class="headerNavButton">Lessons</a>
-                    <a href="games.html" class="headerNavButton">Games</a>
-                    <a href="login.html" class="headerNavButton">LogIn</a>
+  <div class="hamburger" id="hamburgerIcon" onclick="toggleHamburger()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
+
+                <div id="hamburgerMenu">
+                    <div class="headerNavButton"><a href="aboutus.html"><input type="button" value="About us"></a></div>
+                    <div class="headerNavButton"><a href="lessons.html"><input type="button" value="Lessons"></a></div>
+                    <div class="headerNavButton"><a href="games.html"><input type="button" value="Games"></a></div>
+                    <div class="headerNavButton"><a href="login.html"><input type="button" value="LogIn"></a></div>
+                    <div class="headerNavButton"><a href="ourteam.html"><input type="button" value="OurTeam"></a></div>
+                    <div class="headerNavButton"><a href="contact.html"><input type="button" value="Contact"></a></div>
+                </div>
+
 
                 <div id="headerNavBarDiv">
                     <div class="headerNavButton" id="headerNavButton1">
@@ -151,7 +166,7 @@
 
 
            
-        <a href="equations.html">
+        <a href="solvingequasions.html">
         <div id="indexSec2Content4Border" class="indexContentBorder">
               <div id="indexSec2Content4Container">
                 <div class="reviewface">
@@ -207,16 +222,26 @@
         <footer id="footerMain">
             <div id="footerBorder">
 
-                <div id="footerPannelBorder0" class="footerBorder">
-                    <div id="footerPannel0">
-                        <div id="footerLogoDiv">
-                            <img id="footerLogoImg" src="Images/Header/WebsiteLogo.webp">
-                        </div>
-                        <div id="footerTitleDiv">
-                            <img id="headerTitleImg" src="Images/Header/website_name.png">
-                        </div>
-                    </div>
-                </div>
+        <div id="footerPannelBorder1" class="footerBorder">
+          <div id="footerPannel1">
+            <ul>
+              <li><a href="http://www.404.com/">What We Do</a></li>
+              <li><a href="http://www.404.com/">What We DO NOT DO</a></li>
+              <li><a href="http://www.404.com/">What We Believe</a></li>
+              <li><a href="http://www.404.com/">Accessibility Statement</a></li>
+              <li>
+                <a href="http://www.404.com/"
+                  >Compliance With Legislation</a
+                >
+              </li>
+              <li><a href="http://www.404.com/">Equality and Diversity</a></li>
+              <li><a href="http://www.404.com/">Sustainability</a></li>
+              <li><a href="http://www.404.com/">Transparency</a></li>
+              <li><a href="http://www.404.com/">Jobs at Math0ryx</a></li>
+              <li><a href="http://www.404.com/">Explore Us</a></li>
+            </ul>
+          </div>
+        </div>
 
                 <div id="footerPannelBorder1" class="footerBorder">
                     <div id="footerPannel1">

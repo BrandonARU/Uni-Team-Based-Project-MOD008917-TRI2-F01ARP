@@ -7,6 +7,16 @@
   --white-semi: rgba(255, 255, 255, 0.34);
 }
 
+
+body.dark-mode
+
+{ 
+  
+  background-image: url('../Images/Header/background-dark.png'); 
+
+}
+
+
 #lessonMain {
   font-family: Tahoma, Verdana, Geneva, sans-serif;
 }

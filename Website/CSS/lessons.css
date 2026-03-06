@@ -12,7 +12,13 @@
 }
 
 
+body.dark-mode
 
+{ 
+  
+  background-image: url('../Images/Header/background-dark.png'); 
+
+}
 
 
 /*section2*/
