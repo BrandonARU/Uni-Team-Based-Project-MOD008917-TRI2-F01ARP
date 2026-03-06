@@ -28,11 +28,6 @@
                 <div id="headerSearchDiv">
                     <input id="headerSearchBar" type="search" placeholder="Search..">
                 </div>
-                <div class="hamburger" onclick="toggleHamburger()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
 
                 <div class="hamburger" id="hamburgerIcon" onclick="toggleHamburger()">
                     <span></span>
@@ -87,13 +82,14 @@
 
         <!--Floating Button-->
         <div class="fabContainer">
-            <button class="fab" onclick="toggleFab()">+</button>
-            <div class="fabOptions">
-                <button onclick="alert('Home Clicked!')">🏠</button>
-                <button onclick="alert('Search Clicked!')">🔍</button>
-                <button onclick="alert('Settings Clicked!')">⚙️</button>
-            </div>
-        </div>
+  <button class="fab" onclick="toggleFab()">+</button>
+  <div class="fabOptions">
+    <button onclick="goHome()">🏠</button>
+    <button onclick="goSearch()">🔍</button>
+    <button onclick="toggleDark()">🌙</button>
+  </div>
+</div>
+
 
 
         <!--Body-->
@@ -474,81 +470,21 @@ Would recommend. Side effects include confidence and mild smugness.<br> 👍😊
                         </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-        </main>
-        
-        <!--Footer-->
-        <footer id="footerMain">
-            <div id="footerBorder">
-
-                <div id="footerPannelBorder0" class="footerBorder">
-                    <div id="footerPannel0">
-                        <div id="footerLogoDiv">
-                            <img id="footerLogoImg" src="Images/Header/WebsiteLogo.webp">
-                        </div>
-                        <div id="footerTitleDiv">
-                            <img id="headerTitleImg" src="Images/Header/website_name.png">
-                        </div>
-                    </div>
-                </div>
-
-                <div id="footerPannelBorder1" class="footerBorder">
-                    <div id="footerPannel1">
-                    
-                            <ul>
-                                <li><a href="http://www.404.com/">What We Do</a></li>
-                                <li><a href="http://www.404.com/">What We DO NOT DO</a></li>
-                                <li><a href="http://www.404.com/">What We Believe</a></li>
-                                <li><a href="http://www.404.com/">Accessibility Statement</a></li>
-                                <li><a href="http://www.404.com/">Compliance With Current Legislation</a></li>
-                                <li><a href="http://www.404.com/">Equality and Diversity</a></li>
-                                <li><a href="http://www.404.com/">Sustainability</a></li>
-                                <li><a href="http://www.404.com/">Transparency</a></li>
-                                <li><a href="http://www.404.com/">Jobs at Math0ryx</a></li>
-                                <li><a href="http://www.404.com/">Explore Us</a></li>
-                            </ul>
-                        
-                    </div>
-                </div>
-
-                <div id="footerPannelBorder2" class="footerBorder">
-                    <div id="footerPannel2">
-                    
-                            <ul>
-                                <li><a href="http://www.404.com/">Contact Us</a></li>
-                                <li><a href="http://www.404.com/">FAQ</a></li>
-                                <li><a href="http://www.404.com/">Rerport a Problem</a></li>
-                                <li><a href="http://www.404.com/">Suggest Correction</a></li>
-                                <li><a href="http://www.404.com/">Share Your Ideas</a></li>
-                                <li><a href="http://www.404.com/">Contribute and Volunteer</a></li>
-                                <li><a href="http://www.404.com/">Dontate to Our Team</a></li>
-                                <li><a href="http://www.404.com/">Meet Us</a></li>
-                                <li><a href="http://www.404.com/">Support in Learning</a></li>
-                                <li><a href="http://www.404.com/">Personal Tutor</a></li>
-                            </ul>
-                    
-                    </div>
-                </div>
 
                 <div id="footerPannelBorder3" class="footerBorder">
                     <div id="footerPannel3">
-                        
-                            <ul>
-                                <li><a href="http://www.404.com/">Make a Payment Online</a></li>
-                                <li><a href="http://www.404.com/">Book Courses</a></li>
-                                <li><a href="http://www.404.com/">Donate to the Team</a></li>
-                                <li><a href="http://www.404.com/">Donate to the Team</a></li>
-                                <li><a href="http://www.404.com/">Donate to the Team</a></li>
-                                <li><a href="http://www.404.com/">Donate to the Team</a></li>
-                                <li><a href="http://www.404.com/">Donate to the Team</a></li>
-                                <li><a href="http://www.404.com/">Donate to the Team</a></li>
-                                <li><a href="http://www.404.com/">Donate to the Team</a></li>
-                                <li><a href="http://www.404.com/">Donate to the Team</a></li>
-                            </ul>
-                        
+                        <ul>
+                            <li><a href="http://www.404.com/">Make a Payment Online</a></li>
+                            <li><a href="http://www.404.com/">Book Courses</a></li>
+                            <li><a href="http://www.404.com/">Donate to the Team</a></li>
+                            <li><a href="http://www.404.com/">Donate to the Team</a></li>
+                            <li><a href="http://www.404.com/">Donate to the Team</a></li>
+                            <li><a href="http://www.404.com/">Donate to the Team</a></li>
+                            <li><a href="http://www.404.com/">Donate to the Team</a></li>
+                            <li><a href="http://www.404.com/">Donate to the Team</a></li>
+                            <li><a href="http://www.404.com/">Donate to the Team</a></li>
+                            <li><a href="http://www.404.com/">Donate to the Team</a></li>
+                        </ul>
                     </div>
                 </div>
 
@@ -560,5 +496,9 @@ Would recommend. Side effects include confidence and mild smugness.<br> 👍😊
                 </div>
             </div>
         </footer>
+
+
+
     </body>
+
 </html>
