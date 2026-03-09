@@ -8,7 +8,7 @@ function processJson(json){
     let html = "";
     let questionNo = 1;
 
-    json.courses.forEach(object => {
+    json.Questions.forEach(object => {
         let htmlChunk = 
             `
                         <div class="questionDiv">
