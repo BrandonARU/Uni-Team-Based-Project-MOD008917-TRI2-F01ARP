@@ -27,7 +27,7 @@ function processJson(json){
 
     let htmlChunk = 
         `
-                        <div id="quizScore">Score: 0 / ${object.Questions.length}</div>
+                        <div id="quizScore">Score: 0 / ${Questions.length}</div>
         `;
     
     html = html + htmlChunk;
@@ -59,7 +59,7 @@ function checkAnswer(qIndex, chosen) {
         buttons[i].disabled = true;
     }
 
-    document.getElementById('quizScore').textContent = 'Score: ' + score + ' / ' + questions.length;
+    document.getElementById('quizScore').textContent = 'Score: ' + score;
 }
 
 fetchJson();
