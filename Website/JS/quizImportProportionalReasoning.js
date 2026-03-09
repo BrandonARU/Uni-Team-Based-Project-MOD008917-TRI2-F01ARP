@@ -11,14 +11,13 @@ function processJson(json){
     json.Questions.forEach(object => {
         let htmlChunk = 
             `
-                        
                         <div class="quizQuestion">
-                            <p class="quizQText">Question ${questionNo}: ${object.Question}</p>
+                            <p class="quizQText">${questionNo}. ${object.Question}</p>
                             <div class="quizOptions">
-                                <button class="quizOption" onclick="checkAnswer(0,0)">${object.Options[0]}</button>
-                                <button class="quizOption" onclick="checkAnswer(0,1)">${object.Options[1]}</button>
-                                <button class="quizOption" onclick="checkAnswer(0,2)">${object.Options[2]}</button>
-                                <button class="quizOption" onclick="checkAnswer(0,3)">${object.Options[3]}</button>
+                                <button class="quizOption" onclick="checkAnswer(${questionNo-1},0)">${object.Options[0]}</button>
+                                <button class="quizOption" onclick="checkAnswer(${questionNo-1},1)">${object.Options[1]}</button>
+                                <button class="quizOption" onclick="checkAnswer(${questionNo-1},2)">${object.Options[2]}</button>
+                                <button class="quizOption" onclick="checkAnswer(${questionNo-1},3)">${object.Options[3]}</button>
                             </div>
                         </div>
             `;
@@ -26,7 +25,41 @@ function processJson(json){
         html = html + htmlChunk;
     })
 
+    let htmlChunk = 
+        `
+                        <div id="quizScore">Score: 0 / ${object.Questions.length}</div>
+        `;
+    
+    html = html + htmlChunk;
+
     document.getElementById("quizContainer").innerHTML = html;
+}
+
+var score = 0;
+var answered = [];
+
+function checkAnswer(qIndex, chosen) {
+    if (answered[qIndex]) {
+        return;
+    }
+    answered[qIndex] = true;
+
+    var buttons = document.querySelectorAll('#q' + qIndex + ' .quizOption');
+    var correct = questions[qIndex].correct;
+
+    if (chosen === correct) {
+        score++;
+        buttons[chosen].classList.add('correct');
+    } else {
+        buttons[chosen].classList.add('wrong');
+        buttons[correct].classList.add('correct');
+    }
+
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].disabled = true;
+    }
+
+    document.getElementById('quizScore').textContent = 'Score: ' + score + ' / ' + questions.length;
 }
 
 fetchJson();
