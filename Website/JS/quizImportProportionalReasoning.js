@@ -1,10 +1,14 @@
-function fetchJson(){
+var storedJSON;
+var score = 0;
+var totalQuestionNo = 0;
+
+function fetchJson(loadingJSON){
     fetch('./JSON/Quiz/ProportionalReasoning.json')
         .then(response => response.json())
-        .then((json) => processJson(json))
+        .then((json) => loadingJSON)
 }
 
-function processJson(json){
+function writeHTMLfromJSON(json){
     let html = "";
     let questionNo = 1;
 
@@ -14,10 +18,10 @@ function processJson(json){
                         <div class="quizQuestion">
                             <p class="quizQText">${questionNo}. ${object.Question}</p>
                             <div class="quizOptions">
-                                <button class="quizOption" onclick="checkAnswer(${questionNo-1},0)">${object.Options[0]}</button>
-                                <button class="quizOption" onclick="checkAnswer(${questionNo-1},1)">${object.Options[1]}</button>
-                                <button class="quizOption" onclick="checkAnswer(${questionNo-1},2)">${object.Options[2]}</button>
-                                <button class="quizOption" onclick="checkAnswer(${questionNo-1},3)">${object.Options[3]}</button>
+                                <button class="quizOption" id="question-${questionNo-1}-0" onclick="checkAnswer(${questionNo-1},0)">${object.Options[0]}</button>
+                                <button class="quizOption" id="question-${questionNo-1}-1" onclick="checkAnswer(${questionNo-1},2)">${object.Options[2]}</button>
+                                <button class="quizOption" id="question-${questionNo-1}-2" onclick="checkAnswer(${questionNo-1},3)">${object.Options[3]}</button>
+                                <button class="quizOption" id="question-${questionNo-1}-3" onclick="checkAnswer(${questionNo-1},1)">${object.Options[1]}</button>
                             </div>
                         </div>
             `;
@@ -26,33 +30,32 @@ function processJson(json){
     })
 
     document.getElementById("quizContainer").innerHTML = html;
+    
+    return questionNo;
 }
 
-var score = 0;
-var answered = [];
 
-function checkAnswer(qIndex, chosen) {
-    if (answered[qIndex]) {
-        return;
+function CheckAnswer(question, chosenAnswer) {
+    if(storedJSON.Questions[question].Answer == chosenAnswer){
+        CorrectAnswer(question, chosenAnswer);
     }
-    answered[qIndex] = true;
-
-    var buttons = document.querySelectorAll('#q' + qIndex + ' .quizOption');
-    var correct = questions[qIndex].correct;
-
-    if (chosen === correct) {
-        score++;
-        buttons[chosen].classList.add('correct');
-    } else {
-        buttons[chosen].classList.add('wrong');
-        buttons[correct].classList.add('correct');
+    else{
+        WrongAnswer(question, chosenAnswer);
     }
-
-    for (var i = 0; i < buttons.length; i++) {
-        buttons[i].disabled = true;
-    }
-
-    document.getElementById('quizScore').textContent = 'Score: ' + score;
 }
 
-fetchJson();
+function CorrectAnswer(question, chosenAnswer){
+    document.getElementById(`question-${question}-${chosenAnswer}`).className = "quizOption quizOptionCorrect"
+}
+
+function WrongAnswer(){
+    document.getElementById(`question-${question}-${storedJSON.Questions[question].Answer}`).className = "quizOption quizOptionCorrect"
+    document.getElementById(`question-${question}-${chosenAnswer}`).className = "quizOption quizOptionIncorrect"
+}
+
+function UpdateScore(){
+
+}
+
+fetchJson(storedJSON);
+totalQuestionNo = writeHTMLfromJSON(storedJSON);
