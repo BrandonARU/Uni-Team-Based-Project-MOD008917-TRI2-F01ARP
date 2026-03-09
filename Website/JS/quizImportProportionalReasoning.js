@@ -1,5 +1,5 @@
 function fetchJson(){
-    fetch('../JSON/Quiz/ProportionalReasoning.json')
+    fetch('./JSON/Quiz/ProportionalReasoning.json')
         .then(response => response.json())
         .then((json) => processJson(json))
 }
