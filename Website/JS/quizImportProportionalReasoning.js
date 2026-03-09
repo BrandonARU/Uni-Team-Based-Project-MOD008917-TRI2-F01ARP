@@ -25,13 +25,6 @@ function processJson(json){
         html = html + htmlChunk;
     })
 
-    let htmlChunk = 
-        `
-                        <div id="quizScore">Score: 0 / ${Questions.length}</div>
-        `;
-    
-    html = html + htmlChunk;
-
     document.getElementById("quizContainer").innerHTML = html;
 }
 
