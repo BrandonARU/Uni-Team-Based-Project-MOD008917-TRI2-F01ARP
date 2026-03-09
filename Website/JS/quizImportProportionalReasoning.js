@@ -11,15 +11,15 @@ function processJson(json){
     json.Questions.forEach(object => {
         let htmlChunk = 
             `
-                        <div class="questionDiv">
-                            <h3 class="questionHeader">
-                                Question ${questionNo}
-                            </h3>
-                            <h4 class="questionMain">
-                                ${object.Question}
-                            </h4>
-                            <input class="questionTextInput" type="text">
-                            <li></li>
+                        
+                        <div class="quizQuestion">
+                            <p class="quizQText">Question ${questionNo}: ${object.Question}</p>
+                            <div class="quizOptions">
+                                <button class="quizOption" onclick="checkAnswer(0,0)">${object.Options[0]}</button>
+                                <button class="quizOption" onclick="checkAnswer(0,1)">${object.Options[1]}</button>
+                                <button class="quizOption" onclick="checkAnswer(0,2)">${object.Options[2]}</button>
+                                <button class="quizOption" onclick="checkAnswer(0,3)">${object.Options[3]}</button>
+                            </div>
                         </div>
             `;
         questionNo = questionNo + 1;
