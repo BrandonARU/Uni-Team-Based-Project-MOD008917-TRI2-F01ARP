@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bo07pd154d3bn"]
+
+[ext_resource type="Script" uid="uid://cow7uh4nlnwyg" path="res://Scripts/GameRoot.gd" id="1_rj2hb"]
+[ext_resource type="PackedScene" uid="uid://b0gcpg88ppwm8" path="res://Scenes/Background/background_root.tscn" id="2_hlpyv"]
+[ext_resource type="PackedScene" uid="uid://dafwk51q8od80" path="res://Scenes/Ship/Ship.tscn" id="2_sahbr"]
+
+[node name="GameRoot" type="Node2D" unique_id=2010556017 node_paths=PackedStringArray("charBufferLabel")]
+script = ExtResource("1_rj2hb")
+charBufferLabel = NodePath("Label")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1660357040]
+
+[node name="BackgroundRoot" parent="." unique_id=874939479 instance=ExtResource("2_hlpyv")]
+
+[node name="ShipRoot" parent="." unique_id=1613921330 instance=ExtResource("2_sahbr")]
+position = Vector2(-447, 0)
+rotation = 1.5707964
+
+[node name="Label" type="Label" parent="." unique_id=2044731804]
+offset_left = -447.0
+offset_top = 70.0
+offset_right = -341.0
+offset_bottom = 104.0
+horizontal_alignment = 1
+vertical_alignment = 1

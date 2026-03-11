@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://gtd2kdwmy27y"]
+
+[ext_resource type="Texture2D" uid="uid://dxrbeuuy8o3dy" path="res://Assets/Textures/Asteroid/Debris/AsteroidDebris.png" id="1_v6bhc"]
+[ext_resource type="Script" uid="uid://dfkyt1awdds8r" path="res://Scenes/Asteroid/Debris/debris.gd" id="2_j18a2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j18a2"]
+atlas = ExtResource("1_v6bhc")
+
+[node name="Debris" type="Sprite2D"]
+texture_filter = 1
+texture = SubResource("AtlasTexture_j18a2")
+hframes = 8
+vframes = 8
+script = ExtResource("2_j18a2")

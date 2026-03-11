@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://dafwk51q8od80"]
+
+[ext_resource type="Texture2D" uid="uid://djrnwj8tucrkr" path="res://Assets/Textures/Ship.png" id="1_1l6c1"]
+[ext_resource type="Texture2D" uid="uid://bfidaxa4di6pl" path="res://Assets/Textures/ShipGun.png" id="2_r5v3t"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wtp3e"]
+atlas = ExtResource("1_1l6c1")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1q6u4"]
+atlas = ExtResource("1_1l6c1")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8i8wl"]
+atlas = ExtResource("1_1l6c1")
+region = Rect2(512, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k5r1i"]
+atlas = ExtResource("1_1l6c1")
+region = Rect2(768, 0, 256, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3qmhm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtp3e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1q6u4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8i8wl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k5r1i")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u178y"]
+atlas = ExtResource("2_r5v3t")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ast5"]
+atlas = ExtResource("2_r5v3t")
+region = Rect2(256, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tvjuf"]
+atlas = ExtResource("2_r5v3t")
+region = Rect2(512, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ldr6"]
+atlas = ExtResource("2_r5v3t")
+region = Rect2(768, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p7idg"]
+atlas = ExtResource("2_r5v3t")
+region = Rect2(1024, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mdlbw"]
+atlas = ExtResource("2_r5v3t")
+region = Rect2(1280, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eu6rh"]
+atlas = ExtResource("2_r5v3t")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u4wnp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u178y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ast5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tvjuf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ldr6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p7idg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mdlbw")
+}],
+"loop": false,
+"name": &"Charge",
+"speed": 30.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eu6rh")
+}],
+"loop": true,
+"name": &"Default",
+"speed": 1.0
+}]
+
+[node name="ShipRoot" type="Node2D" unique_id=1613921330]
+
+[node name="Ship" type="AnimatedSprite2D" parent="." unique_id=1474553073]
+sprite_frames = SubResource("SpriteFrames_3qmhm")
+autoplay = "default"
+frame_progress = 0.8537725
+
+[node name="ShipGun" type="AnimatedSprite2D" parent="Ship" unique_id=131689943]
+sprite_frames = SubResource("SpriteFrames_u4wnp")
+animation = &"Default"
+autoplay = "Default"
