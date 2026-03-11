@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b5o10ydi55kao"]
+
+[ext_resource type="Texture2D" uid="uid://7s2hcic8jckw" path="res://Assets/Textures/Background/AsteroidsSmallest.png" id="1_tx2ph"]
+
+[node name="SmallAsteroids" type="Sprite2D" unique_id=1753128322]
+texture = ExtResource("1_tx2ph")
