@@ -2,7 +2,8 @@ extends Sprite2D
 
 @onready var sprite: Sprite2D = $".";
 var velocity: Vector2 = Vector2.ZERO;
-@export var SPEED: int = 1;
+@export var SPEED: float = 1;
+@export var FLYBYSPEED: float = 0.2
 @export var LIFETIME: float = 10;
 var timer = Timer.new()
 
@@ -16,7 +17,8 @@ func _ready() -> void:
 	timer.start(LIFETIME);
 
 func _physics_process(delta: float) -> void:
-	global_position += velocity * SPEED;
+	global_position += velocity * SPEED + Vector2(-FLYBYSPEED, 0);
+	FLYBYSPEED += (0.4+FLYBYSPEED) * delta;
 
 func _timeout():
 	queue_free()
