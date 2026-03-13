@@ -18,21 +18,16 @@ body.dark-mode
 
 }
 
-
-
 /*section2*/
 #indexSec2Border {
-  background: linear-gradient(
-    to bottom,
-    #003d00 0%,
-    var(--green) 50%,
-    #003d00 100%
-  );
+  background-image: url('../Images/Header/background-purpose.png');
   width: 100%;
   padding: 3rem 5%;
   color: white;
   font-family: Tahoma, Geneva, sans-serif;
 }
+
+
 
 #indexSec2 {
   max-width: 1400px;
