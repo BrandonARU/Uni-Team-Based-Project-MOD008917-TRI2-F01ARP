@@ -23,12 +23,7 @@ body.dark-mode
 
 /*section2*/
 #indexSec2Border {
-  background: linear-gradient(
-    to bottom,
-    #27024d 0%,             
-    #6600cc 50%,            /* from main palette var(--purple-main) */
-    #27024d 100%
-  );
+  background-image: url('../Images/Header/background-purpose.png');
   width: 100%;
   padding: 3rem 5%;
   color: white;
