@@ -16,9 +16,6 @@
   --orange-mid: #ffaa33;
   --orange-dark: #ca7506;
 }
-body.dark-mode {
-  background-image: url("../Images/Header/background-dark.png");
-}
 
 * {
   margin: 0;
@@ -34,12 +31,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-image: url("../Images/Header/background-dark.png");
-  }
 }
 
 #headerMain {
@@ -130,7 +121,7 @@ body {
   align-items: center;
   gap: 1rem;
   flex: 1;
-  justify-content: flex-end;
+  justify-content: flex;
 }
 
 .headerNavButton {
@@ -509,10 +500,6 @@ body {
   }
 }
 
-body.dark-mode {
-  background-image: url("../Images/Header/background-dark.png");
-}
-
 .dropdown {
   position: relative;
 }
@@ -547,4 +534,28 @@ body.dark-mode {
 .dropdown-content .headerNavButton {
   width: 100%;
   margin: 0;
+}
+
+#indexSec4EmailSubmit {
+  padding: 0.9rem 2.2rem;
+  margin-left: 0.8rem;
+  border: none;
+  border-radius: 50px;
+  background: radial-gradient(
+    circle at center,
+    var(--orange-dark) 0%,
+    var(--orange-glow) 35%,
+    var(--orange-dark) 100%
+  );
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease;
+}
+
+#indexSec4EmailSubmit:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.55);
 }

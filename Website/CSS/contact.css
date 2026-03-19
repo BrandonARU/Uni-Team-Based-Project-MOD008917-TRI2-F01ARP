@@ -7,8 +7,44 @@
   --white-semi: rgba(255, 255, 255, 0.34);
 }
 
-body.dark-mode { background-image: url('../Images/Header/background-dark.png'); }
-/*section1 - intro (white/semi band)*/
+
+
+.light-mode {
+  background-image: url("../Images/Header/background-light.png") !important;
+}
+.dark-mode {
+  background-image: url("../Images/Header/background-dark.png") !important;
+}
+.dark-mode #contactSec1Content,
+.dark-mode #contactSec3Subtitle,
+.dark-mode #contactSec3FormContainer,
+.dark-mode #contactSec3SubtitleBorder,
+.dark-mode #contactSec3FormBorder,
+.dark-mode #contactSec1ContentBorder,
+.dark-mode #contactSec3FieldName,
+.dark-mode #contactName,
+.dark-mode #contactEmail,
+.dark-mode #contactSubject,
+.dark-mode #contactMessage,
+
+.dark-mode #contactSec3FieldEmail,
+.dark-mode #contactSec3FieldSubject,
+.dark-mode #contactSec3FormContainer,
+.dark-mode #contactSec3FieldMessage,
+.dark-mode #indexSec3SubtitleBorder,
+.dark-mode #contactSec5ContentBorder,
+.dark-mode #contactSec5DirectionsBorder,
+.dark-mode .contactDirection,
+.dark-mode #contactSec5LContentBorder,
+.dark-mode #headerSearchBar,  
+.dark-mode #indexSec4EmailField,
+.dark-mode #success-popup .popup-content {
+  background: #d7b78b !important;    
+  color: #1a1a1a !important;          
+  border-color: #c4a56f !important;   
+}
+
+
 #contactSec1Border {
   background: var(--white-semi);
   width: 100%;
@@ -481,56 +517,6 @@ body.dark-mode { background-image: url('../Images/Header/background-dark.png'); 
 }
 
 
-
-
-/* Dark mode support - matches index.css pattern */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-image: url('../Images/Header/background-dark.png');
-  }
-
-  #contactSec1ContentBorder {
-    background: #fffacd;
-    border-color: #e6d88a;
-    color: #000000;
-  }
-
-  #contactSec1Content p {
-    color: #000000;
-  }
-
-  #contactSec3FormBorder {
-    background: #fffacd;
-    border-color: #e6d88a;
-  }
-
-  #contactSec3SubtitleBorder {
-    background: #fffacd;
-    border-color: #e6d88a;
-    color: #000000;
-  }
-
-  #contactSec3Subtitle p {
-    color: #000000;
-  }
-
-  .contactFieldBorder label {
-    color: #000000;
-  }
-
-  .contactFieldBorder input[type="text"],
-  .contactFieldBorder input[type="email"],
-  .contactFieldBorder textarea {
-    background: #fffff0;
-    color: #000000;
-    border-color: #e6d88a;
-  }
-}
-
-
-
-
-/*section5 - Find Us (white/semi band, two columns)*/
 #contactSec5Border {
   background: var(--white-semi);
   width: 100%;
@@ -704,29 +690,3 @@ body.dark-mode { background-image: url('../Images/Header/background-dark.png'); 
     font-size: 1rem;
   }
 }
-
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-  #contactSec5LContentBorder {
-    background: #fffacd;
-    border-color: #e6d88a;
-  }
-
-  .contactDirection {
-    background: #fffff0;
-    border-color: #e6d88a;
-  }
-
-  .contactDirectionText p:last-child {
-    color: #000000;
-  }
-}
-
-
-body.dark-mode
-
-{ 
-  
-  background-image: url('../Images/Header/background-dark.png'); 
-
-}s

@@ -1,19 +1,30 @@
 :root {
-  --green:      #006600;
+  --green: #006600;
   --dark-green: #003d00;
-  --white:      #ffffff;
-  --black:      #000000;
-  --text:       #111111;
+  --white: #ffffff;
+  --black: #000000;
+  --text: #111111;
   --white-semi: rgba(255, 255, 255, 0.34);
 }
 
 
-body.dark-mode
+.light-mode {
+  background-image: url("../Images/Header/background-light.png") !important;
+}
+.dark-mode {
+  background-image: url("../Images/Header/background-dark.png") !important;
+}
 
-{ 
-  
-  background-image: url('../Images/Header/background-dark.png'); 
+.dark-mode #lessonDescBorder,
+.dark-mode #lessonDesc,
 
+
+.dark-mode #headerSearchBar,
+.dark-mode #indexSec4EmailField,
+.dark-mode #success-popup .popup-content {
+  background: #d7b78b !important;    
+  color: #1a1a1a !important;          
+  border-color: #6f5d3d !important;   
 }
 
 
@@ -84,9 +95,9 @@ body.dark-mode
   color: var(--text);
   font-size: clamp(1rem, 2.5vw, 1.2rem);
   line-height: 1.65;
+  colour: var(--black) important!;
 }
 
- 
 #lessonButtonBorder {
   display: flex;
   justify-content: center;
@@ -102,7 +113,9 @@ body.dark-mode
   font-weight: bold;
   font-family: Tahoma, Verdana, Geneva, sans-serif;
   cursor: pointer;
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
 }
 
 #lessonButton:hover {
@@ -122,4 +135,21 @@ body.dark-mode
   #lessonDescBorder {
     padding: 1.4rem 1.2rem;
   }
+}
+#lessonDesc ul {
+  color: #000000;             
+}
+
+#lessonDesc ul li {
+  color: #000000;             
+}
+
+#lessonDesc ul {
+  list-style-type: disc;       
+  padding-left: 1.8rem;     
+}
+
+#lessonDesc ul li strong {
+  color: #000000;
+  font-weight: bold;
 }

@@ -1,7 +1,4 @@
-var score = 0;
-var answered = [];
-
-var questions = [
+const questions = [
   {
     q: "What is 7 × 8?",
     options: ["54", "56", "63", "48"],
@@ -103,53 +100,3 @@ var questions = [
     correct: 2,
   },
 ];
-
-function buildQuiz() {
-  var container = document.getElementById("quizContainer");
-  var html = "";
-
-  for (var i = 0; i < questions.length; i++) {
-    html += '<div class="quizQuestion" id="q' + i + '">';
-    html += '<p class="quizQText">' + (i + 1) + ". " + questions[i].q + "</p>";
-    html += '<div class="quizOptions">';
-    for (var j = 0; j < questions[i].options.length; j++) {
-      html +=
-        '<button class="quizOption" onclick="checkAnswer(' +
-        i +
-        "," +
-        j +
-        ')">' +
-        questions[i].options[j] +
-        "</button>";
-    }
-    html += "</div></div>";
-  }
-
-  html += '<div id="quizScore">Score: 0 / ' + questions.length + "</div>";
-  container.innerHTML = html;
-}
-
-function checkAnswer(qIndex, chosen) {
-  if (answered[qIndex]) return;
-  answered[qIndex] = true;
-
-  var buttons = document.querySelectorAll("#q" + qIndex + " .quizOption");
-  var correct = questions[qIndex].correct;
-
-  if (chosen === correct) {
-    score++;
-    buttons[chosen].classList.add("correct");
-  } else {
-    buttons[chosen].classList.add("wrong");
-    buttons[correct].classList.add("correct");
-  }
-
-  for (var i = 0; i < buttons.length; i++) {
-    buttons[i].disabled = true;
-  }
-
-  document.getElementById("quizScore").textContent =
-    "Score: " + score + " / " + questions.length;
-}
-
-window.onload = buildQuiz;
