@@ -14,6 +14,8 @@
     <!--Script declaration-->
     <script src="JS/index.js" async defer></script>
     <script src="JS/common.js" async defer></script>
+    <script src="JS/signup.js" defer></script>
+   
 
     <!--Header-->
     <header id="headerMain">
@@ -144,14 +146,20 @@
               </div>
             </div>
           </div>
+           <div id="headerNavBarDiv">
+          <div class="headerNavButton" id="headerNavButton1">
+            <a href="Exam.html">
+              <input id="navButton1" type="button" value="Exam" />
+            </a>
+          </div>
           <div class="headerNavButton" id="headerNavButton1">
             <a href="login.html">
-              <input id="navButton1" type="button" value="LogIn" />
+              <input id="navButton1" type="button" value="Log In" />
             </a>
           </div>
           <div class="headerNavButton" id="headerNavButton1">
             <a href="ourteam.html">
-              <input id="navButton1" type="button" value="OurTeam" />
+              <input id="navButton1" type="button" value="Our Team" />
             </a>
           </div>
           <div class="headerNavButton" id="headerNavButton1">
@@ -213,10 +221,13 @@
           <div id="indexSec1RBorder">
             <div id="indexSec1R">
               <div id="indexSec1RContent">
-                <video id="videoWelcomePage">
+                <video id="videoWelcomePage" controls autoplay muted loop playsinline>
                   <source src="Videos/video.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
+                <audio id="audioWelcomePage" controls autoplay muted loop playsinline>
+                <source src="Sounds/homepage-dog-Mattrix.mp3" type="audio/mpeg">
+                </audio>
               </div>
             </div>
           </div>
@@ -430,15 +441,17 @@
           </div>
           <!--Email Entry-->
           <div id="indexSec4EmailEntryBorder">
-            <div id="indexSec4EmailEntryContainer">
-              <input
-                id="indexSec4EmailField"
-                type="email"
-                placeholder="Email..."
-              />
-              <input id="indexSec4EmailSubmit" type="submit" value="Submit" />
-            </div>
-          </div>
+           <div id="indexSec4EmailEntryContainer">
+  <input id="indexSec4EmailField" type="email" placeholder="Email..." />
+  <button id="indexSec4EmailSubmit">Submit</button>
+</div>
+
+<div id="success-popup" class="popup-hidden">
+  <div class="popup-content">
+    <p>Math0ryx got you!<br>Please follow link on your email to set up your account!</p>
+    <button id="popup-close">OK</button>
+  </div>
+</div>
           <!--Bottom note-->
           <div id="indexSec4EmailSubnoteBorder">
             <div id="indexSec4EmailSubnote">
@@ -640,7 +653,7 @@
               <li><a href="http://www.404.com/">Equality and Diversity</a></li>
               <li><a href="http://www.404.com/">Sustainability</a></li>
               <li><a href="http://www.404.com/">Transparency</a></li>
-              <li><a href="http://www.404.com/">Jobs at Math0ryx</a></li>
+              <li><a href="vacancies.html">Jobs at Math0ryx</a></li>
               <li><a href="http://www.404.com/">Explore Us</a></li>
             </ul>
           </div>
@@ -692,5 +705,6 @@
         </div>
       </div>
     </footer>
+     <script src="JS/signup.js" defer></script>
   </body>
 </html>
