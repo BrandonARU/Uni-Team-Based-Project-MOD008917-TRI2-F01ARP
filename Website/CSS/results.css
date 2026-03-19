@@ -1,0 +1,97 @@
+:root {
+  --purple-dark: #27024d;
+  --text-white: #ffffff;
+  --border-purple: #6600cc;
+
+  --purple-main: #6600cc;
+  --purple-light: #9933ff;
+  --purple-pale: #cc99ff;
+  --white: #ffffff;
+  --black: #000000;
+
+  /*for buttons search home settings*/
+  --fab-size-main: 1.5rem;
+  --fab-size-option: 1.5rem;
+  --orange-glow: #ff8c00;
+  --orange-mid: #ffaa33;
+  --orange-dark: #ca7506;
+}
+#resultsMain {
+  padding: 2rem 1rem;
+  min-height: 70vh;
+}
+
+#resultsSec {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: rgba(39, 2, 77, 0.5);
+  border: 2px solid var(--border-purple);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+#resultsTitle,
+#resultsDesc {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#leaderboardContainer {
+  overflow-x: auto;
+}
+
+#leaderboardTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+#leaderboardTable th,
+#leaderboardTable td {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#leaderboardTable th {
+  background: var(--purple-main);
+  color: white;
+}
+
+#leaderboardTable tr:hover {
+  background: rgba(102, 0, 204, 0.2);
+}
+
+.medal-gold {
+  color: #ffd700;
+  font-weight: bold;
+}
+.medal-silver {
+  color: #c0c0c0;
+  font-weight: bold;
+}
+.medal-bronze {
+  color: #cd7f32;
+  font-weight: bold;
+}
+.medal-none {
+  color: #888;
+}
+
+#backButton {
+  display: block;
+  margin: 2rem auto 1rem;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  background: var(--purple-dark);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+#backButton:hover {
+  transform: scale(1.08);
+}

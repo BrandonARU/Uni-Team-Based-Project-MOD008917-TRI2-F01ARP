@@ -16,75 +16,171 @@
         <script src="JS/common.js" async defer></script>
 
         
-        <!--Header-->
-        <header id="headerMain">
-            <div id="headerBorder">
-                <div id="headerLogoDiv">
-                    <img id="headerLogoImg" src="Images/Header/WebsiteLogo.webp">
-                </div>
-                <div id="headerTitleDiv">
-                    <img id="headerTitleImg" src="Images/Header/Website_Name_V2.png">
-                </div>
-                <div id="headerSearchDiv">
-                    <input id="headerSearchBar" type="search" placeholder="Search..">
-                </div>
-                <div class="hamburger" id="hamburgerIcon" onclick="toggleHamburger()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+       
 
-                <div id="hamburgerMenu">
-                    <div class="headerNavButton"><a href="aboutus.html"><input type="button" value="About us"></a></div>
-                    <div class="headerNavButton"><a href="lessons.html"><input type="button" value="Lessons"></a></div>
-                    <div class="headerNavButton"><a href="games.html"><input type="button" value="Games"></a></div>
-                    <div class="headerNavButton"><a href="login.html"><input type="button" value="LogIn"></a></div>
-                    <div class="headerNavButton"><a href="ourteam.html"><input type="button" value="OurTeam"></a></div>
-                    <div class="headerNavButton"><a href="contact.html"><input type="button" value="Contact"></a></div>
-                </div>
-                <div id="headerNavBarDiv">
-                    <div class="headerNavButton" id="headerNavButton1">
-                        <a href="aboutus.html">
-                            <input id="navButton1" type="button" value="About us">
-                        </a>
-                    </div>
-                    <div class="headerNavButton" id="headerNavButton1">
-                        <a href="lessons.html">
-                            <input id="navButton1" type="button" value="Lessons">
-                        </a>
-                    </div>
-                    <div class="headerNavButton" id="headerNavButton1">
-                        <a href="games.html">
-                            <input id="navButton1" type="button" value="Games">
-                        </a>
-                    </div>
-                    <div class="headerNavButton" id="headerNavButton1">
-                        <a href="login.html">
-                            <input id="navButton1" type="button" value="LogIn">
-                        </a>
-                    </div>
-                    <div class="headerNavButton" id="headerNavButton1">
-                        <a href="ourteam.html">
-                            <input id="navButton1" type="button" value="OurTeam">
-                        </a>
-                    </div>
-                    <div class="headerNavButton" id="headerNavButton1">
-                        <a href="contact.html">
-                            <input id="navButton1" type="button" value="Contact">
-                        </a>
-                    </div>
-                </div>
+    <!--Header-->
+    <header id="headerMain">
+      <div id="headerBorder">
+        <div id="headerLogoDiv">
+          <a href="index.html"
+            ><img id="headerLogoImg" src="Images/Header/WebsiteLogo.webp"
+          /></a>
+        </div>
+        <div id="headerTitleDiv">
+          <a href="index.html"
+            ><img id="headerTitleImg" src="Images/Header/Website_Name_V2.png"
+          /></a>
+        </div>
+        <div id="headerSearchDiv">
+          <input id="headerSearchBar" type="search" placeholder="Search.." />
+        </div>
+
+        <div class="hamburger" id="hamburgerIcon" onclick="toggleHamburger()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div id="hamburgerMenu">
+          <div class="headerNavButton">
+            <a href="aboutus.html"><input type="button" value="About us" /></a>
+          </div>
+          <div class="headerNavButton">
+            <a href="lessons.html"><input type="button" value="Lessons" /></a>
+          </div>
+          <div class="headerNavButton">
+            <a href="games.html"><input type="button" value="Games" /></a>
+          </div>
+          <div class="headerNavButton">
+            <a href="login.html"><input type="button" value="LogIn" /></a>
+          </div>
+          <div class="headerNavButton">
+            <a href="ourteam.html"><input type="button" value="OurTeam" /></a>
+          </div>
+          <div class="headerNavButton">
+            <a href="contact.html"><input type="button" value="Contact" /></a>
+          </div>
+        </div>
+
+        <div id="headerNavBarDiv">
+          <div class="headerNavButton" id="headerNavButton1">
+            <a href="index.html">
+              <input id="navButton1" type="button" value="Home" />
+            </a>
+          </div>
+          <div class="headerNavButton" id="headerNavButton1">
+            <a href="aboutus.html">
+              <input id="navButton1" type="button" value="About us" />
+            </a>
+          </div>
+          <div class="headerNavButton dropdown" id="headerNavButton1">
+            <a href="lessons.html">
+              <input id="navButton1" type="button" value="Lessons" />
+            </a>
+            <div class="dropdown-content">
+              <div class="headerNavButton">
+                <a href="proportionalreasoning.html"
+                  ><input type="button" value="Proportional Reasoning"
+                /></a>
+              </div>
+              <div class="headerNavButton">
+                <a href="visualalgebra.html"
+                  ><input type="button" value="Visual Algebra"
+                /></a>
+              </div>
+              <div class="headerNavButton">
+                <a href="quadratics.html"
+                  ><input type="button" value="Quadratics"
+                /></a>
+              </div>
+              <div class="headerNavButton">
+                <a href="solvingequasions.html"
+                  ><input type="button" value="Solving Equations"
+                /></a>
+              </div>
+              <div class="headerNavButton">
+                <a href="probabilityandchance.html"
+                  ><input type="button" value="Probability and Chance"
+                /></a>
+              </div>
+              <div class="headerNavButton">
+                <a href="calculus.html"
+                  ><input type="button" value="Calculus"
+                /></a>
+              </div>
             </div>
-        </header>
-        <!--Floating Button-->
-        <div class="fabContainer">
-  <button class="fab" onclick="toggleFab()">+</button>
-  <div class="fabOptions">
-    <button onclick="goHome()">🏠</button>
-    <button onclick="goSearch()">🔍</button>
-    <button onclick="toggleDark()">🌙</button>
-  </div>
-</div>
+          </div>
+          <div class="headerNavButton dropdown" id="headerNavButton1">
+            <a href="games.html">
+              <input id="navButton1" type="button" value="Games" />
+            </a>
+            <div class="dropdown-content">
+              <div class="headerNavButton">
+                <a href="proportionalreasoninggame.html"
+                  ><input type="button" value="Proportional Reasoning Game"
+                /></a>
+              </div>
+              <div class="headerNavButton">
+                <a href="visualalgebragame.html"
+                  ><input type="button" value="Visual Algebra Game"
+                /></a>
+              </div>
+              <div class="headerNavButton">
+                <a href="quadraticsgame.html"
+                  ><input type="button" value="Quadratics Game"
+                /></a>
+              </div>
+              <div class="headerNavButton">
+                <a href="solvingequasionsgame.html"
+                  ><input type="button" value="Solving Equations Game"
+                /></a>
+              </div>
+              <div class="headerNavButton">
+                <a href="probabilityandchancegame.html"
+                  ><input type="button" value="Probability and Chance Game"
+                /></a>
+              </div>
+              <div class="headerNavButton">
+                <a href="calculusgame.html"
+                  ><input type="button" value="Calculus Game"
+                /></a>
+              </div>
+            </div>
+          </div>
+           <div id="headerNavBarDiv">
+          <div class="headerNavButton" id="headerNavButton1">
+            <a href="Exam.html">
+              <input id="navButton1" type="button" value="Exam" />
+            </a>
+          </div>
+          <div class="headerNavButton" id="headerNavButton1">
+            <a href="login.html">
+              <input id="navButton1" type="button" value="Log In" />
+            </a>
+          </div>
+          <div class="headerNavButton" id="headerNavButton1">
+            <a href="ourteam.html">
+              <input id="navButton1" type="button" value="Our Team" />
+            </a>
+          </div>
+          <div class="headerNavButton" id="headerNavButton1">
+            <a href="contact.html">
+              <input id="navButton1" type="button" value="Contact" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--Floating Button-->
+    <div class="fabContainer">
+      <button class="fab" onclick="toggleFab()">+</button>
+      <div class="fabOptions">
+        <button onclick="goHome()">🏠</button>
+        <button onclick="goSearch()">🔍</button>
+        <button onclick="toggleDark()">🌙</button>
+      </div>
+    </div>
         <!--Body-->
         <main id="indexMain">
             <!--Third section of Content-->
@@ -150,7 +246,7 @@ She may not solve your life’s deepest mysteries, but she will hand you the exa
                         <div id="indexSec3Content3Border" class="indexContentBorder">
                             <div id="indexSec3Content3Container">
                                 <div class="reviewface">
-                                    <img id="reviewFace" src="Images/LeaderBoard/LeaderBoard5.png">
+                                    <img id="reviewFace" src="Images/LeaderBoard/LeaderBoard6.png">
                                 </div>
                                 <p>
                                     <strong> Meet Rayyan,</strong> <br> Our Equation Whisperer. <br>
@@ -291,7 +387,7 @@ Did you know math can taste good? Ask Sujal — he’s already preheated the ove
                                     <a href="http://www.404.com/">Transparency</a>
                                 </li>
                                 <li>
-                                    <a href="http://www.404.com/">Jobs at Math0ryx</a>
+                                    <a href="vacancies.html">Jobs at Math0ryx</a>
                                 </li>
                                 <li>
                                     <a href="http://www.404.com/">Explore Us</a>

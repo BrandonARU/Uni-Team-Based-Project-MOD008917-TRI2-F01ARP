@@ -10,24 +10,13 @@
   --white-semi: rgba(255, 255, 255, 0.34);
 }
 
-body.dark-mode
-
-{ 
-  
-  background-image: url('../Images/Header/background-dark.png'); 
-
+body.dark-mode {
+  background-image: url("../Images/Header/background-dark.png");
 }
-
-
 
 /*section2*/
 #indexSec2Border {
-  background: linear-gradient(
-    to bottom,
-    #003d00 0%,
-    var(--green) 50%,
-    #003d00 100%
-  );
+  background-image: url("../Images/Header/background-purpose.png");
   width: 100%;
   padding: 3rem 5%;
   color: white;
