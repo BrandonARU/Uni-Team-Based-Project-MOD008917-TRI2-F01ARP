@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://diy4j65o542px"]
+
+[ext_resource type="Texture2D" uid="uid://c8p5db7ia2sj" path="res://Assets/Textures/Background/AsteroidsMeduim.png" id="1_m4dxl"]
+
+[node name="MediumAsteroids" type="Sprite2D" unique_id=71932476]
+texture = ExtResource("1_m4dxl")
