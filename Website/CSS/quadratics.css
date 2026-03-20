@@ -63,23 +63,28 @@
 }
 
 /* Video */
-#lessonVideoBorder {
-  width: 100%;
-}
-
+ 
 #lessonVideoContainer {
-  width: 100%;
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid #ddd;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
-#lessonVideo {
+#lessonVideoBorder {
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#lessonVideoContainer {
+  width: clamp(350px, 80vw, 2000px);
+}
+
+#videoWelcomePage {
+  width: 100%;
+  height: auto;
   display: block;
-  max-height: 72vh;
-  background: #000;
 }
 
 /* Description */
@@ -101,6 +106,7 @@
 #lessonButtonBorder {
   display: flex;
   justify-content: center;
+  border-color: orange;
 }
 
 #lessonButton {

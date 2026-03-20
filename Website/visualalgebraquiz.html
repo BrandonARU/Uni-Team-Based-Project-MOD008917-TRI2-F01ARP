@@ -4,20 +4,20 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Learn Maths and Have Fun</title>
-        <meta name="description" content="Index page for Math0ryx website">
+        <title>Visual Algerba Game - Math0ryx</title>
+        <meta name="description" content="Calculus Game page for Math0ryx website">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="CSS/common.css">
-        <link rel="stylesheet" href="CSS/quadratics.css">
-        <link rel="stylesheet" href="CSS/jsQuiz.css">
+        <link rel="stylesheet" href="CSS/quadraticsquiz.css">
     </head>
     <body>
-        <!--Script declaration-->
-        <script src="js/common.js" defer></script> 
-        <script src="js/quizImportProportionalReasioning.js" defer></script> 
-        
-        
+    
+          <!--Script declaration-->
+    <script src="JS/index.js" async defer></script>
+    <script src="JS/common.js" async defer></script>
+    <script src="JS/signup.js" defer></script>
 
+   
     <!--Header-->
     <header id="headerMain">
       <div id="headerBorder">
@@ -182,70 +182,63 @@
       </div>
     </div>
 
+
         <!--Body-->
-        <main id="lessonMain">
-            <section id="lessonSecBorder">
-                <div id="lessonSec">
+        <main id="gameMain">
+            <section id="gameSecBorder">
+                <div id="gameSec">
 
                     <!-- Title -->
-                    <div id="lessonTitleBorder">
-                        <div id="lessonTitle">
-                            <h4>Quadratics</h4>
+                    <div id="gameTitleBorder">
+                        <div id="gameTitle">
+                            <h4>Visual Algebra Game</h4>
                         </div>
                     </div>
 
-                    <!-- Video -->
-                    <div id="lessonVideoBorder">
-                        <div id="lessonVideoContainer">
-                            <video id="lessonVideo" controls>
-                                <source src="/Videos/video.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                    </div>
-
-                    <!-- Description -->
-                    <div id="lessonDescBorder">
-                        <div id="lessonDesc">
+                    <!-- Rules Description -->
+                    <div id="gameDescBorder">
+                        <div id="gameDesc">
                             <p>
-                                In this lesson, we explore quadratic equations and how to solve them using
-                                factoring, completing the square, and the quadratic formula. By the end,
-                                you will be able to identify, graph, and solve any quadratic equation
-                                with confidence. Take your time, pause the video whenever you need, and
-                                make sure you understand each step before moving on.
+                                Welcome to the Visual Algebra Game!
+                                 Explore algebra through diagrams, balance models,
+                                  and graphical representations in this interactive challenge. 
+                                  Each round presents a visual problem — study the shapes, symbols,
+                                   or models carefully and determine the correct algebraic solution before
+                                    the timer runs out. You earn points for every correct interpretation, with 
+                                    bonus points for fast and accurate thinking. If your answer is incorrect, 
+                                    a hint will help you understand the visual relationship behind the equation.
+                                     As you progress, you will unlock more complex visual models and multi-step 
+                                     reasoning tasks. There is no penalty for skipping a question, but your final score 
+                                     reflects both understanding and efficiency. 
+                                Remember: visual algebra helps you see the structure behind the symbols.
                             </p>
                         </div>
                     </div>
 
-                    <!-- Button -->
-                    <div id="lessonButtonBorder">
-                        <a href="quadraticsgames.html">
-                            <button id="lessonButton">Play Quadratics Game</button>
+                    <!-- Game Embed -->
+                    <div id="gameEmbedBorder">
+                        <div id="gameEmbedContainer">
+                            <iframe
+                                id="gameEmbed"
+                                src="about:blank"
+                                title="Calculus Game"
+                                allowfullscreen
+                                frameborder="0">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- Back to Lesson Button -->
+                    <div id="gameButtonBorder">
+                        <a href="visualalgebra.html">
+                            <button id="gameButton">Back to Visual Algebra Lesson</button>
                         </a>
                     </div>
 
                 </div>
-                <!--Lesson quiz start-->
-                <section id="lessonSection">
-                    <h2 id="lessonTitle">
-                        Lesson Quiz
-                    </h2>
-                    <div id="quizContainer">
-                        <div class="questionDiv">
-                            <h3 class="questionHeader">
-                                Question 1
-                            </h3>
-                            <h4 class="questionMain">
-                                What is 2+2
-                            </h4>
-                            <input class="questionTextInput" type="text">
-                            <li></li>
-                        </div>
-                    </div>
-                </section>
             </section>
-            
-        </main>  
+        </main>
+
 
         <!--Footer-->
         <footer id="footerMain">
@@ -264,58 +257,52 @@
 
                 <div id="footerPannelBorder1" class="footerBorder">
                     <div id="footerPannel1">
-                    
-                            <ul>
-                                <li><a href="http://www.404.com/">What We Do</a></li>
-                                <li><a href="http://www.404.com/">What We DO NOT DO</a></li>
-                                <li><a href="http://www.404.com/">What We Believe</a></li>
-                                <li><a href="http://www.404.com/">Accessibility Statement</a></li>
-                                <li><a href="http://www.404.com/">Compliance With Current Legislation</a></li>
-                                <li><a href="http://www.404.com/">Equality and Diversity</a></li>
-                                <li><a href="http://www.404.com/">Sustainability</a></li>
-                                <li><a href="http://www.404.com/">Transparency</a></li>
-                                <li><a href="vacancies.html">Jobs at Math0ryx</a></li>
-                                <li><a href="http://www.404.com/">Explore Us</a></li>
-                            </ul>
-                        
+                        <ul>
+                            <li><a href="http://www.404.com/">What We Do</a></li>
+                            <li><a href="http://www.404.com/">What We DO NOT DO</a></li>
+                            <li><a href="http://www.404.com/">What We Believe</a></li>
+                            <li><a href="http://www.404.com/">Accessibility Statement</a></li>
+                            <li><a href="http://www.404.com/">Compliance With Legislation</a></li>
+                            <li><a href="http://www.404.com/">Equality and Diversity</a></li>
+                            <li><a href="http://www.404.com/">Sustainability</a></li>
+                            <li><a href="http://www.404.com/">Transparency</a></li>
+                            <li><a href="vacancies.html">Jobs at Math0ryx</a></li>
+                            <li><a href="http://www.404.com/">Explore Us</a></li>
+                        </ul>
                     </div>
                 </div>
 
                 <div id="footerPannelBorder2" class="footerBorder">
                     <div id="footerPannel2">
-                    
-                            <ul>
-                                <li><a href="http://www.404.com/">Contact Us</a></li>
-                                <li><a href="http://www.404.com/">FAQ</a></li>
-                                <li><a href="http://www.404.com/">Rerport a Problem</a></li>
-                                <li><a href="http://www.404.com/">Suggest Correction</a></li>
-                                <li><a href="http://www.404.com/">Share Your Ideas</a></li>
-                                <li><a href="http://www.404.com/">Contribute and Volunteer</a></li>
-                                <li><a href="http://www.404.com/">Dontate to Our Team</a></li>
-                                <li><a href="http://www.404.com/">Meet Us</a></li>
-                                <li><a href="http://www.404.com/">Support in Learning</a></li>
-                                <li><a href="http://www.404.com/">Personal Tutor</a></li>
-                            </ul>
-                    
+                        <ul>
+                            <li><a href="http://www.404.com/">Contact Us</a></li>
+                            <li><a href="http://www.404.com/">FAQ</a></li>
+                            <li><a href="http://www.404.com/">Report a Problem</a></li>
+                            <li><a href="http://www.404.com/">Suggest Correction</a></li>
+                            <li><a href="http://www.404.com/">Share Your Ideas</a></li>
+                            <li><a href="http://www.404.com/">Contribute and Volunteer</a></li>
+                            <li><a href="http://www.404.com/">Donate to Our Team</a></li>
+                            <li><a href="http://www.404.com/">Meet Us</a></li>
+                            <li><a href="http://www.404.com/">Support in Learning</a></li>
+                            <li><a href="http://www.404.com/">Personal Tutor</a></li>
+                        </ul>
                     </div>
                 </div>
 
                 <div id="footerPannelBorder3" class="footerBorder">
                     <div id="footerPannel3">
-                        
-                            <ul>
-                                <li><a href="http://www.404.com/">Make a Payment Online</a></li>
-                                <li><a href="http://www.404.com/">Book Courses</a></li>
-                                <li><a href="http://www.404.com/">Donate to the Team</a></li>
-                                <li><a href="http://www.404.com/">Donate to the Team</a></li>
-                                <li><a href="http://www.404.com/">Donate to the Team</a></li>
-                                <li><a href="http://www.404.com/">Donate to the Team</a></li>
-                                <li><a href="http://www.404.com/">Donate to the Team</a></li>
-                                <li><a href="http://www.404.com/">Donate to the Team</a></li>
-                                <li><a href="http://www.404.com/">Donate to the Team</a></li>
-                                <li><a href="http://www.404.com/">Donate to the Team</a></li>
-                            </ul>
-                        
+                        <ul>
+                            <li><a href="http://www.404.com/">Make a Payment Online</a></li>
+                            <li><a href="http://www.404.com/">Book Courses</a></li>
+                            <li><a href="http://www.404.com/">Donate to the Team</a></li>
+                            <li><a href="http://www.404.com/">Donate to the Team</a></li>
+                            <li><a href="http://www.404.com/">Donate to the Team</a></li>
+                            <li><a href="http://www.404.com/">Donate to the Team</a></li>
+                            <li><a href="http://www.404.com/">Donate to the Team</a></li>
+                            <li><a href="http://www.404.com/">Donate to the Team</a></li>
+                            <li><a href="http://www.404.com/">Donate to the Team</a></li>
+                            <li><a href="http://www.404.com/">Donate to the Team</a></li>
+                        </ul>
                     </div>
                 </div>
 
@@ -327,5 +314,7 @@
                 </div>
             </div>
         </footer>
+
+
     </body>
 </html>

@@ -4,23 +4,24 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Probability and Chance Game - Math0ryx</title>
+    <title>Quadratics Game - Math0ryx</title>
     <meta
       name="description"
       content="Calculus Game page for Math0ryx website"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="CSS/common.css" />
-    <link rel="stylesheet" href="CSS/calculusgame.css" />
+    <link rel="stylesheet" href="CSS/quadraticsquiz.css" />
   </head>
   <body>
     <!--Script declaration-->
     <script src="JS/index.js" async defer></script>
     <script src="JS/common.js" async defer></script>
+    <script src="JS/quadraticsquiz.js" async defer></script>
+    <script src="JS/quadraticsquiz-save.js" defer></script>
+   
 
     
-    
-
     <!--Header-->
     <header id="headerMain">
       <div id="headerBorder">
@@ -119,40 +120,40 @@
             </a>
             <div class="dropdown-content">
               <div class="headerNavButton">
-                <a href="proportionalreasoninggame.html"
-                  ><input type="button" value="Proportional Reasoning Game"
+                <a href="proportionalreasoningquiz.html"
+                  ><input type="button" value="Proportional Reasoning Quiz"
                 /></a>
               </div>
               <div class="headerNavButton">
-                <a href="visualalgebragame.html"
-                  ><input type="button" value="Visual Algebra Game"
+                <a href="visualalgebraquiz.html"
+                  ><input type="button" value="Visual Algebra Quiz"
                 /></a>
               </div>
               <div class="headerNavButton">
-                <a href="quadraticsgame.html"
-                  ><input type="button" value="Quadratics Game"
+                <a href="quadraticsquiz.html"
+                  ><input type="button" value="Quadratics Quiz"
                 /></a>
               </div>
               <div class="headerNavButton">
-                <a href="solvingequasionsgame.html"
-                  ><input type="button" value="Solving Equations Game"
+                <a href="solvingequasionsquiz.html"
+                  ><input type="button" value="Solving Equations Quiz"
                 /></a>
               </div>
               <div class="headerNavButton">
-                <a href="probabilityandchancegame.html"
-                  ><input type="button" value="Probability and Chance Game"
+                <a href="probabilityandchancequiz.html"
+                  ><input type="button" value="Probability and Chance Quiz"
                 /></a>
               </div>
               <div class="headerNavButton">
-                <a href="calculusgame.html"
-                  ><input type="button" value="Calculus Game"
+                <a href="calculusquiz.html"
+                  ><input type="button" value="Calculus Quiz"
                 /></a>
               </div>
             </div>
           </div>
            <div id="headerNavBarDiv">
           <div class="headerNavButton" id="headerNavButton1">
-            <a href="Exam.html">
+            <a href="exam.html">
               <input id="navButton1" type="button" value="Exam" />
             </a>
           </div>
@@ -175,6 +176,7 @@
       </div>
     </header>
 
+
     <!--Floating Button-->
     <div class="fabContainer">
       <button class="fab" onclick="toggleFab()">+</button>
@@ -185,6 +187,8 @@
       </div>
     </div>
     
+     
+
     <!--Body-->
     <main id="gameMain">
       <section id="gameSecBorder">
@@ -192,7 +196,7 @@
           <!-- Title -->
           <div id="gameTitleBorder">
             <div id="gameTitle">
-              <h4>Probability and Chance Game</h4>
+              <h4>Quadratics Game</h4>
             </div>
           </div>
 
@@ -200,120 +204,170 @@
           <div id="gameDescBorder">
             <div id="gameDesc">
               <p>
-                Welcome to the Probability and Chance Game! Test your
-                understanding of likelihood, outcomes, and event relationships
-                in a fun and interactive challenge. Each round presents you with
-                a probability scenario — read it carefully, calculate the
-                chances, and choose the correct answer before the timer runs
-                out. You earn points for every correct solution, with bonus
-                points awarded for accuracy and speed. If you answer
-                incorrectly, a helpful hint will appear to guide you toward the
-                correct reasoning. Progress through levels that introduce
-                compound events, conditional probability, and real-world problem
-                solving. There are no penalties for skipping a question, but
-                your final score reflects both precision and pace. Good luck,
-                and remember: probability is about logical thinking, not
-                guessing!
+                Welcome to the Quadratics Game! Test your understanding of
+                quadratic equations, parabolas, and solution methods in an
+                exciting interactive challenge. Each round presents you with a
+                quadratic problem — analyse the equation carefully, decide
+                whether to factorise, complete the square, or use the quadratic
+                formula, and submit your answer before the timer runs out. You
+                earn points for every correct solution, with bonus points
+                awarded for speed and accurate reasoning. If you answer
+                incorrectly, a helpful hint will guide you toward the correct
+                method or highlight a common mistake. Progress through levels
+                that introduce graph interpretation, discriminants, and
+                real-world quadratic applications. You may skip questions
+                without penalty, but your final score reflects both accuracy and
+                pace. Good luck, and remember: mastering quadratics means
+                understanding the structure of the equation, not just applying a
+                formula mechanically.
               </p>
             </div>
           </div>
 
-          <!-- Game Embed -->
+          <!-- Quiz -->
           <div id="gameEmbedBorder">
             <div id="gameEmbedContainer">
-              <iframe
-                id="gameEmbed"
-                src="about:blank"
-                title="Calculus Game"
-                allowfullscreen
-                frameborder="0"
-              >
-              </iframe>
+              <div id="quizContainer"></div>
             </div>
           </div>
 
           <!-- Back to Lesson Button -->
           <div id="gameButtonBorder">
-            <a href="probabilityandchance.html">
-              <button id="gameButton">
-                Back to Probability and Chance Lesson
-              </button>
+            <a href="quadratics.html">
+              <button id="gameButton">Back to Quadratics Lesson</button>
             </a>
           </div>
         </div>
       </section>
     </main>
 
-    <!--Footer-->
+
+   <!--Footer-->
+      <!--Footer-->
     <footer id="footerMain">
       <div id="footerBorder">
         <div id="footerPannelBorder0" class="footerBorder">
           <div id="footerPannel0">
             <div id="footerLogoDiv">
-              <img id="footerLogoImg" src="Images/Header/WebsiteLogo.webp" />
+              <a href="index.html">
+                <img id="footerLogoImg" src="Images/Header/WebsiteLogo.webp" alt="Mathoryx Logo"/>
+              </a>
             </div>
+
             <div id="footerTitleDiv">
-              <img id="headerTitleImg" src="Images/Header/website_name.png" />
+              <a href="index.html">
+                <img id="headerTitleImg" src="Images/Header/website_name.png" alt="Mathoryx Website Name"/>
+              </a>
             </div>
+
           </div>
         </div>
-
         <div id="footerPannelBorder1" class="footerBorder">
           <div id="footerPannel1">
             <ul>
-              <li><a href="http://www.404.com/">What We Do</a></li>
-              <li><a href="http://www.404.com/">What We DO NOT DO</a></li>
-              <li><a href="http://www.404.com/">What We Believe</a></li>
-              <li><a href="http://www.404.com/">Accessibility Statement</a></li>
               <li>
-                <a href="http://www.404.com/">Compliance With Legislation</a>
+                <a href="whatwedo.html">What We Do</a>
               </li>
-              <li><a href="http://www.404.com/">Equality and Diversity</a></li>
-              <li><a href="http://www.404.com/">Sustainability</a></li>
-              <li><a href="http://www.404.com/">Transparency</a></li>
-              <li><a href="vacancies.html">Jobs at Math0ryx</a></li>
-              <li><a href="http://www.404.com/">Explore Us</a></li>
+              <li>
+                <a href="whatwedonotdo.html">What We DO NOT DO</a>
+              </li>
+              <li>
+                <a href="whatwebelieve.html">What We Believe</a>
+              </li>
+              <li>
+                <a href="accessibility.html">Accessibility Statement</a>
+              </li>
+              <li>
+                <a href="compliance.html">Compliance With Legislation</a>
+              </li>
+              <li>
+                <a href="equalitydiversity.html">Equality and Diversity</a>
+              </li>
+              <li>
+                <a href="sustainability.html">Sustainability</a>
+              </li>
+              <li>
+                <a href="transparency.html">Transparency</a>
+              </li>
+              <li>
+                <a href="vacancies.html">Jobs at Math0ryx</a>
+              </li>
+              <li>
+                <a href="index.html">Explore Us</a>
+              </li>
             </ul>
           </div>
         </div>
-
         <div id="footerPannelBorder2" class="footerBorder">
           <div id="footerPannel2">
             <ul>
-              <li><a href="http://www.404.com/">Contact Us</a></li>
-              <li><a href="http://www.404.com/">FAQ</a></li>
-              <li><a href="http://www.404.com/">Report a Problem</a></li>
-              <li><a href="http://www.404.com/">Suggest Correction</a></li>
-              <li><a href="http://www.404.com/">Share Your Ideas</a></li>
               <li>
-                <a href="http://www.404.com/">Contribute and Volunteer</a>
+                <a href="contact.html">Contact Us</a>
               </li>
-              <li><a href="http://www.404.com/">Donate to Our Team</a></li>
-              <li><a href="http://www.404.com/">Meet Us</a></li>
-              <li><a href="http://www.404.com/">Support in Learning</a></li>
-              <li><a href="http://www.404.com/">Personal Tutor</a></li>
+              <li>
+                <a href="faq.html">FAQ</a>
+              </li>
+              <li>
+                <a href="report.html">Report a Problem</a>
+              </li>
+              <li>
+                <a href="suggest.html">Suggest Correction</a>
+              </li>
+              <li>
+                <a href="share.html">Share Your Ideas</a>
+              </li>
+              <li>
+                <a href="contribute.html">Contribute and Volunteer</a>
+              </li>
+              <li>
+                <a href="donate.html">Donate to Our Team</a>
+              </li>
+              <li>
+                <a href="contact.html">Meet Us</a>
+              </li>
+              <li>
+                <a href="support.html">Support in Learning</a>
+              </li>
+              <li>
+                <a href="tutor.html">Personal Tutor</a>
+              </li>
             </ul>
           </div>
         </div>
-
         <div id="footerPannelBorder3" class="footerBorder">
           <div id="footerPannel3">
             <ul>
-              <li><a href="http://www.404.com/">Make a Payment Online</a></li>
-              <li><a href="http://www.404.com/">Book Courses</a></li>
-              <li><a href="http://www.404.com/">Donate to the Team</a></li>
-              <li><a href="http://www.404.com/">Donate to the Team</a></li>
-              <li><a href="http://www.404.com/">Donate to the Team</a></li>
-              <li><a href="http://www.404.com/">Donate to the Team</a></li>
-              <li><a href="http://www.404.com/">Donate to the Team</a></li>
-              <li><a href="http://www.404.com/">Donate to the Team</a></li>
-              <li><a href="http://www.404.com/">Donate to the Team</a></li>
-              <li><a href="http://www.404.com/">Donate to the Team</a></li>
+              <li>
+                <a href="makeapayment.html">Make Payment Online</a>
+              </li>
+              <li>
+                <a href="bookcourses.html">Book Courses</a>
+              </li>
+              <li>
+                <a href="donate.html">Donate to the Team</a>
+              </li>
+              <li>
+                <a href="donate.html">Invest Into Team</a>
+              </li>
+              <li>
+                <a href="donate.html">Support The Team</a>
+              </li>
+              <li>
+                <a href="donate.html">Befriend The Team</a>
+              </li>
+              <li>
+                <a href="donate.html">GoFundMe Team</a>
+              </li>
+              <li>
+                <a href="donate.html">Get involved with Team</a>
+              </li>
+              <li>
+                <a href="donate.html">Donate to the Team</a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
-
       <div id="footerCopyrightBorderDiv" class="footerBorder">
         <div id="footerCopyrightDiv">
           <p>
@@ -323,5 +377,7 @@
         </div>
       </div>
     </footer>
+   
+     <script src="JS/signup.js" defer></script>
   </body>
 </html>

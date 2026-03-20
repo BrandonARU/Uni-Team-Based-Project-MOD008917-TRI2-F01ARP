@@ -11,16 +11,17 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="CSS/common.css" />
-    <link rel="stylesheet" href="CSS/calculusgame.css" />
+    <link rel="stylesheet" href="CSS/quadraticsquiz.css" />
   </head>
   <body>
     <!--Script declaration-->
     <script src="JS/index.js" async defer></script>
     <script src="JS/common.js" async defer></script>
-    <script src="JS/quadraticsgamequizz.js" async defer></script>
-    <script src="JS/quadraticsgame-save.js" defer></script>
+    <script src="JS/quadraticsquiz.js" async defer></script>
+    <script src="JS/quadraticsquiz-save.js" defer></script>
    
 
+    
     <!--Header-->
     <header id="headerMain">
       <div id="headerBorder">
@@ -119,40 +120,40 @@
             </a>
             <div class="dropdown-content">
               <div class="headerNavButton">
-                <a href="proportionalreasoninggame.html"
-                  ><input type="button" value="Proportional Reasoning Game"
+                <a href="proportionalreasoningquiz.html"
+                  ><input type="button" value="Proportional Reasoning Quiz"
                 /></a>
               </div>
               <div class="headerNavButton">
-                <a href="visualalgebragame.html"
-                  ><input type="button" value="Visual Algebra Game"
+                <a href="visualalgebraquiz.html"
+                  ><input type="button" value="Visual Algebra Quiz"
                 /></a>
               </div>
               <div class="headerNavButton">
-                <a href="quadraticsgame.html"
-                  ><input type="button" value="Quadratics Game"
+                <a href="quadraticsquiz.html"
+                  ><input type="button" value="Quadratics Quiz"
                 /></a>
               </div>
               <div class="headerNavButton">
-                <a href="solvingequasionsgame.html"
-                  ><input type="button" value="Solving Equations Game"
+                <a href="solvingequasionsquiz.html"
+                  ><input type="button" value="Solving Equations Quiz"
                 /></a>
               </div>
               <div class="headerNavButton">
-                <a href="probabilityandchancegame.html"
-                  ><input type="button" value="Probability and Chance Game"
+                <a href="probabilityandchancequiz.html"
+                  ><input type="button" value="Probability and Chance Quiz"
                 /></a>
               </div>
               <div class="headerNavButton">
-                <a href="calculusgame.html"
-                  ><input type="button" value="Calculus Game"
+                <a href="calculusquiz.html"
+                  ><input type="button" value="Calculus Quiz"
                 /></a>
               </div>
             </div>
           </div>
            <div id="headerNavBarDiv">
           <div class="headerNavButton" id="headerNavButton1">
-            <a href="Exam.html">
+            <a href="exam.html">
               <input id="navButton1" type="button" value="Exam" />
             </a>
           </div>
@@ -175,6 +176,7 @@
       </div>
     </header>
 
+
     <!--Floating Button-->
     <div class="fabContainer">
       <button class="fab" onclick="toggleFab()">+</button>
@@ -185,6 +187,8 @@
       </div>
     </div>
     
+     
+
     <!--Body-->
     <main id="gameMain">
       <section id="gameSecBorder">
@@ -192,7 +196,7 @@
           <!-- Title -->
           <div id="gameTitleBorder">
             <div id="gameTitle">
-              <h4>Calculus Game</h4>
+              <h4>Quadratics Game</h4>
             </div>
           </div>
 
@@ -220,106 +224,13 @@
             </div>
           </div>
 
-          <!-- Game Embed -->
+          <!-- Quiz -->
           <div id="gameEmbedBorder">
             <div id="gameEmbedContainer">
-              <iframe
-                id="gameEmbed"
-                src="about:blank"
-                title="Calculus Game"
-                allowfullscreen
-                frameborder="0"
-              >
-              </iframe>
+              <div id="quizContainer"></div>
             </div>
           </div>
-          <div
-            id="saveScoreModal"
-            style="
-              display: none;
-              position: fixed;
-              inset: 0;
-              background: rgba(0, 0, 0, 0.7);
-              z-index: 9999;
-              align-items: center;
-              justify-content: center;
-            "
-          >
-            <div
-              style="
-                background: #2a0d5a;
-                color: white;
-                padding: 2rem;
-                border-radius: 12px;
-                text-align: center;
-                max-width: 420px;
-                width: 90%;
-              "
-            >
-              <h3>Save your score?</h3>
-              <p>Final score: <span id="modalFinalScore">0 / 20</span></p>
 
-              <button
-                id="btnSaveYes"
-                style="
-                  padding: 0.8rem 1.6rem;
-                  margin: 0.5rem;
-                  background: #28a745;
-                  color: white;
-                  border: none;
-                  border-radius: 8px;
-                  font-size: 1.1rem;
-                  cursor: pointer;
-                "
-              >
-                Yes
-              </button>
-              <button
-                id="btnSaveNo"
-                style="
-                  padding: 0.8rem 1.6rem;
-                  margin: 0.5rem;
-                  background: #dc3545;
-                  color: white;
-                  border: none;
-                  border-radius: 8px;
-                  font-size: 1.1rem;
-                  cursor: pointer;
-                "
-              >
-                No
-              </button>
-
-              <div id="nameEntry" style="display: none; margin-top: 1.5rem">
-                <input
-                  type="text"
-                  id="playerName"
-                  placeholder="Your name..."
-                  style="
-                    padding: 0.7rem;
-                    width: 85%;
-                    font-size: 1.1rem;
-                    margin: 0.8rem 0;
-                  "
-                />
-                <button
-                  id="btnConfirmSave"
-                  style="
-                    padding: 0.8rem 1.6rem;
-                    background: #ffc107;
-                    color: black;
-                    border: none;
-                    border-radius: 8px;
-                    font-size: 1.1rem;
-                    cursor: pointer;
-                    margin-top: 0.6rem;
-                  "
-                >
-                  Save Now
-                </button>
-              </div>
-            </div>
-          </div>
           <!-- Back to Lesson Button -->
           <div id="gameButtonBorder">
             <a href="quadratics.html">
@@ -330,76 +241,133 @@
       </section>
     </main>
 
-    <!--Footer-->
+
+   <!--Footer-->
+      <!--Footer-->
     <footer id="footerMain">
       <div id="footerBorder">
         <div id="footerPannelBorder0" class="footerBorder">
           <div id="footerPannel0">
             <div id="footerLogoDiv">
-              <img id="footerLogoImg" src="Images/Header/WebsiteLogo.webp" />
+              <a href="index.html">
+                <img id="footerLogoImg" src="Images/Header/WebsiteLogo.webp" alt="Mathoryx Logo"/>
+              </a>
             </div>
+
             <div id="footerTitleDiv">
-              <img id="headerTitleImg" src="Images/Header/website_name.png" />
+              <a href="index.html">
+                <img id="headerTitleImg" src="Images/Header/website_name.png" alt="Mathoryx Website Name"/>
+              </a>
             </div>
+
           </div>
         </div>
-
         <div id="footerPannelBorder1" class="footerBorder">
           <div id="footerPannel1">
             <ul>
-              <li><a href="http://www.404.com/">What We Do</a></li>
-              <li><a href="http://www.404.com/">What We DO NOT DO</a></li>
-              <li><a href="http://www.404.com/">What We Believe</a></li>
-              <li><a href="http://www.404.com/">Accessibility Statement</a></li>
               <li>
-                <a href="http://www.404.com/">Compliance With Legislation</a>
+                <a href="whatwedo.html">What We Do</a>
               </li>
-              <li><a href="http://www.404.com/">Equality and Diversity</a></li>
-              <li><a href="http://www.404.com/">Sustainability</a></li>
-              <li><a href="http://www.404.com/">Transparency</a></li>
-              <li><a href="vacancies.html">Jobs at Math0ryx</a></li>
-              <li><a href="http://www.404.com/">Explore Us</a></li>
+              <li>
+                <a href="whatwedonotdo.html">What We DO NOT DO</a>
+              </li>
+              <li>
+                <a href="whatwebelieve.html">What We Believe</a>
+              </li>
+              <li>
+                <a href="accessibility.html">Accessibility Statement</a>
+              </li>
+              <li>
+                <a href="compliance.html">Compliance With Legislation</a>
+              </li>
+              <li>
+                <a href="equalitydiversity.html">Equality and Diversity</a>
+              </li>
+              <li>
+                <a href="sustainability.html">Sustainability</a>
+              </li>
+              <li>
+                <a href="transparency.html">Transparency</a>
+              </li>
+              <li>
+                <a href="vacancies.html">Jobs at Math0ryx</a>
+              </li>
+              <li>
+                <a href="index.html">Explore Us</a>
+              </li>
             </ul>
           </div>
         </div>
-
         <div id="footerPannelBorder2" class="footerBorder">
           <div id="footerPannel2">
             <ul>
-              <li><a href="http://www.404.com/">Contact Us</a></li>
-              <li><a href="http://www.404.com/">FAQ</a></li>
-              <li><a href="http://www.404.com/">Report a Problem</a></li>
-              <li><a href="http://www.404.com/">Suggest Correction</a></li>
-              <li><a href="http://www.404.com/">Share Your Ideas</a></li>
               <li>
-                <a href="http://www.404.com/">Contribute and Volunteer</a>
+                <a href="contact.html">Contact Us</a>
               </li>
-              <li><a href="http://www.404.com/">Donate to Our Team</a></li>
-              <li><a href="http://www.404.com/">Meet Us</a></li>
-              <li><a href="http://www.404.com/">Support in Learning</a></li>
-              <li><a href="http://www.404.com/">Personal Tutor</a></li>
+              <li>
+                <a href="faq.html">FAQ</a>
+              </li>
+              <li>
+                <a href="report.html">Report a Problem</a>
+              </li>
+              <li>
+                <a href="suggest.html">Suggest Correction</a>
+              </li>
+              <li>
+                <a href="share.html">Share Your Ideas</a>
+              </li>
+              <li>
+                <a href="contribute.html">Contribute and Volunteer</a>
+              </li>
+              <li>
+                <a href="donate.html">Donate to Our Team</a>
+              </li>
+              <li>
+                <a href="contact.html">Meet Us</a>
+              </li>
+              <li>
+                <a href="support.html">Support in Learning</a>
+              </li>
+              <li>
+                <a href="tutor.html">Personal Tutor</a>
+              </li>
             </ul>
           </div>
         </div>
-
         <div id="footerPannelBorder3" class="footerBorder">
           <div id="footerPannel3">
             <ul>
-              <li><a href="http://www.404.com/">Make a Payment Online</a></li>
-              <li><a href="http://www.404.com/">Book Courses</a></li>
-              <li><a href="http://www.404.com/">Donate to the Team</a></li>
-              <li><a href="http://www.404.com/">Donate to the Team</a></li>
-              <li><a href="http://www.404.com/">Donate to the Team</a></li>
-              <li><a href="http://www.404.com/">Donate to the Team</a></li>
-              <li><a href="http://www.404.com/">Donate to the Team</a></li>
-              <li><a href="http://www.404.com/">Donate to the Team</a></li>
-              <li><a href="http://www.404.com/">Donate to the Team</a></li>
-              <li><a href="http://www.404.com/">Donate to the Team</a></li>
+              <li>
+                <a href="makeapayment.html">Make Payment Online</a>
+              </li>
+              <li>
+                <a href="bookcourses.html">Book Courses</a>
+              </li>
+              <li>
+                <a href="donate.html">Donate to the Team</a>
+              </li>
+              <li>
+                <a href="donate.html">Invest Into Team</a>
+              </li>
+              <li>
+                <a href="donate.html">Support The Team</a>
+              </li>
+              <li>
+                <a href="donate.html">Befriend The Team</a>
+              </li>
+              <li>
+                <a href="donate.html">GoFundMe Team</a>
+              </li>
+              <li>
+                <a href="donate.html">Get involved with Team</a>
+              </li>
+              <li>
+                <a href="donate.html">Donate to the Team</a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
-
       <div id="footerCopyrightBorderDiv" class="footerBorder">
         <div id="footerCopyrightDiv">
           <p>
@@ -409,5 +377,7 @@
         </div>
       </div>
     </footer>
+   
+     <script src="JS/signup.js" defer></script>
   </body>
 </html>
