@@ -4,18 +4,24 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Visual Algebra Lesson - Learn Maths and Have Fun</title>
-    <meta name="description" content="Home page for Math0ryx website" />
+    <title>Quadratics Game - Math0ryx</title>
+    <meta
+      name="description"
+      content="Calculus Game page for Math0ryx website"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="CSS/common.css" />
-    <link rel="stylesheet" href="CSS/quadratics.css" />
+    <link rel="stylesheet" href="CSS/quadraticsquiz.css" />
   </head>
   <body>
     <!--Script declaration-->
     <script src="JS/index.js" async defer></script>
     <script src="JS/common.js" async defer></script>
+    <script src="JS/quadraticsquiz.js" async defer></script>
+    <script src="JS/quadraticsquiz-save.js" defer></script>
    
- 
+
+    
     <!--Header-->
     <header id="headerMain">
       <div id="headerBorder">
@@ -180,57 +186,64 @@
         <button onclick="toggleDark()">🌙</button>
       </div>
     </div>
+    
+     
 
-
-<!--Body-->
-        <main id="lessonMain">
-            <section id="lessonSecBorder">
-                <div id="lessonSec">
-
-                    <!-- Title -->
-                    <div id="lessonTitleBorder">
-                        <div id="lessonTitle">
-                            <h4>Visual Algerba</h4>
-                        </div>
-                    </div>
-
-                     <!-- Video -->
-          <div id="lessonVideoBorder">
-            <div id="lessonVideoContainer">
-              <video id="videoWelcomePage" controls autoplay muted loop playsinline>
-                  <source src="Videos/video.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+    <!--Body-->
+    <main id="gameMain">
+      <section id="gameSecBorder">
+        <div id="gameSec">
+          <!-- Title -->
+          <div id="gameTitleBorder">
+            <div id="gameTitle">
+              <h4>Quadratics Game</h4>
             </div>
           </div>
 
-                    <!-- Description -->
-                    <div id="lessonDescBorder">
-                        <div id="lessonDesc">
-                            <p>
-                               In this lesson, we explore visual algebra as a way of understanding mathematical relationships through diagrams and models. You will learn how shapes, balance scales, and graphical representations can make abstract algebraic ideas clearer. We will use visual tools to represent unknowns and solve simple equations. By the end, you will see how algebra connects logical reasoning with visual interpretation. Pause whenever needed and focus on understanding the meaning behind each visual step.
-                            </p>
-                        </div>
-                    </div>
-
-                     <div id="lessonButtonBorder">
-            <a href="calculusquiz.html">
-              <button id="lessonButton">Do Calculus Quizz</button>
-            </a>
-             <a href="calculusgame.html">
-              <button id="lessonButton">Play Calculus Game</button>
-            </a>
+          <!-- Rules Description -->
+          <div id="gameDescBorder">
+            <div id="gameDesc">
+              <p>
+                Welcome to the Quadratics Game! Test your understanding of
+                quadratic equations, parabolas, and solution methods in an
+                exciting interactive challenge. Each round presents you with a
+                quadratic problem — analyse the equation carefully, decide
+                whether to factorise, complete the square, or use the quadratic
+                formula, and submit your answer before the timer runs out. You
+                earn points for every correct solution, with bonus points
+                awarded for speed and accurate reasoning. If you answer
+                incorrectly, a helpful hint will guide you toward the correct
+                method or highlight a common mistake. Progress through levels
+                that introduce graph interpretation, discriminants, and
+                real-world quadratic applications. You may skip questions
+                without penalty, but your final score reflects both accuracy and
+                pace. Good luck, and remember: mastering quadratics means
+                understanding the structure of the equation, not just applying a
+                formula mechanically.
+              </p>
+            </div>
           </div>
 
-                </div>
-            </section>
-        </main>  
+          <!-- Quiz -->
+          <div id="gameEmbedBorder">
+            <div id="gameEmbedContainer">
+              <div id="quizContainer"></div>
+            </div>
+          </div>
+
+          <!-- Back to Lesson Button -->
+          <div id="gameButtonBorder">
+            <a href="quadratics.html">
+              <button id="gameButton">Back to Quadratics Lesson</button>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
 
 
-
-
-
- <!--Footer-->
+   <!--Footer-->
+      <!--Footer-->
     <footer id="footerMain">
       <div id="footerBorder">
         <div id="footerPannelBorder0" class="footerBorder">
