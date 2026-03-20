@@ -1,0 +1,8 @@
+Feedback 
+- Email submit is very good with a nice colour change to show acceptance of answers, needs some invalidation systems 
+- Good functionality with the log in, also nice colour change to show acceptance, shoe password function needs functionality 
+- Very nice drop down menues on hover for nav bar and also image enlargement on hover, search bar needs functionality
+- Excellent audio functions with the talking dog mascot video that makes the website much more intresting 
+- Formatting is mostly good and colour scheme is very nice, some boxes/images need adjusting 
+- Good lesson plans that seem intresting, rocket ship game is really fun and engaging, quiz's need functionality 
+Signed Connor 2412756
