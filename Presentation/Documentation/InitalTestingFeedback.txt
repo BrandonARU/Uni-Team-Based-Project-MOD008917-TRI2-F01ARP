@@ -1,0 +1,19 @@
+Video works
+Audio bar on wrong area
+Dark mode works
+Home button works
+Search doesn't work
+Login has no validation
+Free trial email has no validation
+Trustpilot link works
+Call us phone number went to voicemail and is likely somebody's random number
+Map embed is good
+Footer takes to 404 page needs to be correctly linked
+Lesson page looks good
+Text to speech works
+quiz has good validation
+quiz functions
+
+
+
+Kieran signed

@@ -559,3 +559,11 @@ body {
   transform: scale(1.08);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.55);
 }
+
+input:invalid{
+  border-color: #dc2626 !important;
+}
+
+input:valid{
+  border-color: #16a34a !important;
+}
