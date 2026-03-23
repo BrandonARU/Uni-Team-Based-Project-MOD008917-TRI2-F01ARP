@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,31 +10,27 @@
     <link rel="stylesheet" href="CSS/common.css" />
   </head>
   <body>
-    <!--Script declaration-->
     <script src="JS/index.js" async defer></script>
     <script src="JS/common.js" async defer></script>
     <script src="JS/aboutus.js" async defer></script>
 
-    
-
-    <!--Header-->
     <header id="headerMain">
       <div id="headerBorder">
         <div id="headerLogoDiv">
-          <a href="index.html"
-            ><img id="headerLogoImg" src="Images/Header/WebsiteLogo.webp"
-          /></a>
+          <a href="index.html">
+            <img id="headerLogoImg" src="Images/Header/WebsiteLogo.webp" alt="Math0ryx official logo" />
+          </a>
         </div>
         <div id="headerTitleDiv">
-          <a href="index.html"
-            ><img id="headerTitleImg" src="Images/Header/Website_Name_V2.png"
-          /></a>
+          <a href="index.html">
+            <img id="headerTitleImg" src="Images/Header/Website_Name_V2.png" alt="Math0ryx website name and brand" />
+          </a>
         </div>
         <div id="headerSearchDiv">
-          <input id="headerSearchBar" type="search" placeholder="Search.." />
+          <input id="headerSearchBar" type="search" placeholder="Search.." aria-label="Search the Math0ryx website" />
         </div>
 
-        <div class="hamburger" id="hamburgerIcon" onclick="toggleHamburger()">
+        <div class="hamburger" id="hamburgerIcon" onclick="toggleHamburger()" aria-label="Toggle navigation menu" role="button" tabindex="0">
           <span></span>
           <span></span>
           <span></span>
@@ -83,28 +79,28 @@
                 </a>
               </div>
               <div class="headerNavButton">
-                <a href="visualalgebra.html"
-                  ><input type="button" value="Visual Algebra"/>
+                <a href="visualalgebra.html">
+                  <input type="button" value="Visual Algebra"/>
                 </a>
               </div>
               <div class="headerNavButton">
-                <a href="quadratics.html"
-                  ><input type="button" value="Quadratics"/>
+                <a href="quadratics.html">
+                  <input type="button" value="Quadratics"/>
                 </a>
               </div>
               <div class="headerNavButton">
-                <a href="solvingequasions.html"
-                  ><input type="button" value="Solving Equations"/>
+                <a href="solvingequasions.html">
+                  <input type="button" value="Solving Equations"/>
                 </a>
               </div>
               <div class="headerNavButton">
-                <a href="probabilityandchance.html"
-                  ><input type="button" value="Probability and Chance"/>
+                <a href="probabilityandchance.html">
+                  <input type="button" value="Probability and Chance"/>
                 </a>
               </div>
               <div class="headerNavButton">
-                <a href="calculus.html"
-                  ><input type="button" value="Calculus"/>
+                <a href="calculus.html">
+                  <input type="button" value="Calculus"/>
                 </a>
               </div>
             </div>
@@ -115,84 +111,80 @@
             </a>
             <div class="dropdown-content">
               <div class="headerNavButton">
-                <a href="proportionalreasoningquiz.html"
-                  ><input type="button" value="Proportional Reasoning Quiz"/>
+                <a href="proportionalreasoningquiz.html">
+                  <input type="button" value="Proportional Reasoning Quiz"/>
                 </a>
               </div>
               <div class="headerNavButton">
-                <a href="visualalgebraquiz.html"
-                  ><input type="button" value="Visual Algebra Quiz"/>
+                <a href="visualalgebraquiz.html">
+                  <input type="button" value="Visual Algebra Quiz"/>
                 </a>
               </div>
               <div class="headerNavButton">
-                <a href="quadraticsquiz.html"
-                  ><input type="button" value="Quadratics Quiz"/>
+                <a href="quadraticsquiz.html">
+                  <input type="button" value="Quadratics Quiz"/>
                 </a>
               </div>
               <div class="headerNavButton">
-                <a href="solvingequasionsquiz.html"
-                  ><input type="button" value="Solving Equations Quiz"/>
+                <a href="solvingequasionsquiz.html">
+                  <input type="button" value="Solving Equations Quiz"/>
                 </a>
               </div>
               <div class="headerNavButton">
-                <a href="probabilityandchancequiz.html"
-                  ><input type="button" value="Probability and Chance Quiz"/>
+                <a href="probabilityandchancequiz.html">
+                  <input type="button" value="Probability and Chance Quiz"/>
                 </a>
               </div>
               <div class="headerNavButton">
-                <a href="calculusquiz.html"
-                  ><input type="button" value="Calculus Quiz"/>
+                <a href="calculusquiz.html">
+                  <input type="button" value="Calculus Quiz"/>
                 </a>
               </div>
             </div>
           </div>
-           <div id="headerNavBarDiv">
-          <div class="headerNavButton" id="headerNavButton1">
-            <a href="exam.html">
-              <input id="navButton1" type="button" value="Exam" />
-            </a>
-          </div>
-          <div class="headerNavButton" id="headerNavButton1">
-            <a href="login.html">
-              <input id="navButton1" type="button" value="Log In" />
-            </a>
-          </div>
-          <div class="headerNavButton" id="headerNavButton1">
-            <a href="ourteam.html">
-              <input id="navButton1" type="button" value="Our Team" />
-            </a>
-          </div>
-          <div class="headerNavButton" id="headerNavButton1">
-            <a href="contact.html">
-              <input id="navButton1" type="button" value="Contact" />
-            </a>
+          <div id="headerNavBarDiv">
+            <div class="headerNavButton" id="headerNavButton1">
+              <a href="exam.html">
+                <input id="navButton1" type="button" value="Exam" />
+              </a>
+            </div>
+            <div class="headerNavButton" id="headerNavButton1">
+              <a href="login.html">
+                <input id="navButton1" type="button" value="Log In" />
+              </a>
+            </div>
+            <div class="headerNavButton" id="headerNavButton1">
+              <a href="ourteam.html">
+                <input id="navButton1" type="button" value="Our Team" />
+              </a>
+            </div>
+            <div class="headerNavButton" id="headerNavButton1">
+              <a href="contact.html">
+                <input id="navButton1" type="button" value="Contact" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </header>
 
-    <!--Floating Button-->
     <div class="fabContainer">
-      <button class="fab" onclick="toggleFab()">+</button>
+      <button class="fab" onclick="toggleFab()" aria-label="Open floating action menu">+</button>
       <div class="fabOptions">
-        <button onclick="goHome()">🏠</button>
-        <button onclick="goSearch()">🔍</button>
-        <button onclick="toggleDark()">🌙</button>
+        <button onclick="goHome()" aria-label="Go to homepage">🏠</button>
+        <button onclick="goSearch()" aria-label="Focus search bar">🔍</button>
+        <button onclick="toggleDark()" aria-label="Toggle dark mode">🌙</button>
       </div>
     </div>
-    
-    <!--Body-->
+
     <main id="indexMain">
-      <!-- SECTION 0 -->
       <section id="indexSec0Border" class="indexContentBorder">
         <div id="indexSec0">
           <div id="indexSec0LBorder">
             <div id="indexSec0MainBox">
               <div class="main-content">
                 <h1 class="main-heading">Why Math0ryx?</h1>
-
                 <div class="main-text">
-                  
                   <p id="fitText">
                     Math0ryx turns confusion into clarity through structured,
                     step-by-step mastery of mathematics. Build unshakable
@@ -203,21 +195,17 @@
                     transform the way you learn, solve, and succeed.
                   </p>                   
                 </div>      
-                
               </div>
             </div>
           </div>          
         </div>              
-                <audio id="audioWelcomePage" controls autoplay muted loop playsinline>
-                <source src="Sounds/aboutus-top.mp3" type="audio/mpeg" alt="Dog named Mathoryx telling about our website">
-                </audio>
+        <audio id="audioWelcomePage" controls autoplay muted loop playsinline aria-label="Dog named Mathoryx explaining why choose Math0ryx">
+          <source src="Sounds/aboutus-top.mp3" type="audio/mpeg" />
+        </audio>
       </section>
-      
 
-      <!-- SECTION 1 -->
       <section id="indexSec1Border" class="indexContentBorder">
         <div id="indexSec1">
-          <!-- Left -->
           <div id="indexSec1LBorder">
             <div id="indexSec1L">
               <div id="indexSec1LTitleBorder" class="indexContentBorder">
@@ -245,26 +233,23 @@
               </div>
             </div>
           </div>
-          <!-- Right -->
           <div id="indexSec1RBorder">
             <div id="indexSec1R">
               <div id="indexSec1RContent">
-                                <video id="videoWelcomePage" controls autoplay muted loop playsinline>
-                  <source src="Videos/video.mp4" type="video/mp4" alt="Dog Named Mathoryx moving while telling about the website goals" />
-                  Your browser does not support the video tag.
+                <video id="videoWelcomePage" controls autoplay muted loop playsinline aria-label="Dog named Mathoryx explaining about us">
+                  <source src="Videos/video.mp4" type="video/mp4" />
                 </video>
-                <audio id="audioWelcomePage" controls autoplay muted loop playsinline>
-                <source src="Sounds/aboutussec1.mp3" type="audio/mpeg" alt="Audio description of the website goals narrated by DOg Mathoryx">
+                <audio id="audioWelcomePage" controls autoplay muted loop playsinline aria-label="Audio narration by dog Mathoryx about our mission">
+                  <source src="Sounds/aboutussec1.mp3" type="audio/mpeg" />
                 </audio>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- SECTION 1 -->
+
       <section id="indexSec1Border" class="indexContentBorder flip">
         <div id="indexSec1">
-          <!-- Left -->
           <div id="indexSec1LBorder">
             <div id="indexSec1L">
               <div id="indexSec1LTitleBorder" class="indexContentBorder">
@@ -287,32 +272,27 @@
                     adaptability allows educators to enhance their teaching
                     while meeting diverse student needs.
                   </p>
-                  
                 </div>
               </div>
             </div>
           </div>
-          <!-- Right -->
           <div id="indexSec1RBorder">
             <div id="indexSec1R">
               <div id="indexSec1RContent">
-                <video id="videoWelcomePage" controls autoplay muted loop playsinline>
-                  <source src="Videos/video.mp4" type="video/mp4" alt="Dog Named Mathoryx moving while telling about the website goals" />
-                  Your browser does not support the video tag.
+                <video id="videoWelcomePage" controls autoplay muted loop playsinline aria-label="Dog named Mathoryx explaining our mission">
+                  <source src="Videos/video.mp4" type="video/mp4" />
                 </video>
-                  <audio id="audioWelcomePage" controls autoplay muted loop playsinline>
-                <source src="Sounds/aboutus-top.mp3" type="audio/mpeg" alt="Dog named Mathoryx telling about our website goals">
+                <audio id="audioWelcomePage" controls autoplay muted loop playsinline aria-label="Audio narration by dog Mathoryx about our mission">
+                  <source src="Sounds/aboutus-top.mp3" type="audio/mpeg" />
                 </audio>
-                 
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- SECTION 1 -->
+
       <section id="indexSec1Border" class="indexContentBorder">
         <div id="indexSec1">
-          <!-- Left -->
           <div id="indexSec1LBorder">
             <div id="indexSec1L">
               <div id="indexSec1LTitleBorder" class="indexContentBorder">
@@ -338,26 +318,23 @@
               </div>
             </div>
           </div>
-          <!-- Right -->
           <div id="indexSec1RBorder">
             <div id="indexSec1R">
               <div id="indexSec1RContent">
-                <video id="videoWelcomePage" controls autoplay muted loop playsinline>
-                  <source src="Videos/video.mp4" type="video/mp4" alt="Dog Named Mathoryx moving while telling about the website goals" />
-                  Your browser does not support the video tag.
+                <video id="videoWelcomePage" controls autoplay muted loop playsinline aria-label="Dog named Mathoryx explaining our structure">
+                  <source src="Videos/video.mp4" type="video/mp4" />
                 </video>
-                 <audio id="audioWelcomePage" controls autoplay muted loop playsinline>
-                <source src="Sounds/aboutus-top.mp3" type="audio/mpeg" alt="Dog named Mathoryx telling about our website goals">
+                <audio id="audioWelcomePage" controls autoplay muted loop playsinline aria-label="Audio narration by dog Mathoryx about our structure">
+                  <source src="Sounds/aboutus-top.mp3" type="audio/mpeg" />
                 </audio>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- SECTION 1 -->
+
       <section id="indexSec1Border" class="indexContentBorder flip">
         <div id="indexSec1">
-          <!-- Left -->
           <div id="indexSec1LBorder">
             <div id="indexSec1L">
               <div id="indexSec1LTitleBorder" class="indexContentBorder">
@@ -383,16 +360,14 @@
               </div>
             </div>
           </div>
-          <!-- Right -->
           <div id="indexSec1RBorder">
             <div id="indexSec1R">
               <div id="indexSec1RContent">
-                <video id="videoWelcomePage" controls autoplay muted loop playsinline>
-                  <source src="Videos/video.mp4" type="video/mp4" alt="Dog Named Mathoryx moving while telling about the website goals" />
-                  Your browser does not support the video tag.
+                <video id="videoWelcomePage" controls autoplay muted loop playsinline aria-label="Dog named Mathoryx explaining our approach">
+                  <source src="Videos/video.mp4" type="video/mp4" />
                 </video>
-                 <audio id="audioWelcomePage" controls autoplay muted loop playsinline>
-                <source src="Sounds/aboutus-top.mp3" type="audio/mpeg" alt="Dog named Mathoryx telling about our website goals">
+                <audio id="audioWelcomePage" controls autoplay muted loop playsinline aria-label="Audio narration by dog Mathoryx about our approach">
+                  <source src="Sounds/aboutus-top.mp3" type="audio/mpeg" />
                 </audio>
               </div>
             </div>
@@ -400,128 +375,67 @@
         </div>
       </section>
     </main>
-   
-  <!--Footer-->
+
     <footer id="footerMain">
       <div id="footerBorder">
         <div id="footerPannelBorder0" class="footerBorder">
           <div id="footerPannel0">
             <div id="footerLogoDiv">
               <a href="index.html">
-                <img id="footerLogoImg" src="Images/Header/WebsiteLogo.webp" alt="Mathoryx Logo"/>
+                <img id="footerLogoImg" src="Images/Header/WebsiteLogo.webp" alt="Math0ryx logo" />
               </a>
             </div>
-
             <div id="footerTitleDiv">
               <a href="index.html">
-                <img id="headerTitleImg" src="Images/Header/website_name.png" alt="Mathoryx Website Name"/>
+                <img id="headerTitleImg" src="Images/Header/website_name.png" alt="Math0ryx website name" />
               </a>
             </div>
-
           </div>
         </div>
         <div id="footerPannelBorder1" class="footerBorder">
           <div id="footerPannel1">
             <ul>
-              <li>
-                <a href="whatwedo.html">What We Do</a>
-              </li>
-              <li>
-                <a href="whatwedonotdo.html">What We DO NOT DO</a>
-              </li>
-              <li>
-                <a href="whatwebelieve.html">What We Believe</a>
-              </li>
-              <li>
-                <a href="accessibility.html">Accessibility Statement</a>
-              </li>
-              <li>
-                <a href="compliance.html">Compliance With Legislation</a>
-              </li>
-              <li>
-                <a href="equalitydiversity.html">Equality and Diversity</a>
-              </li>
-              <li>
-                <a href="sustainability.html">Sustainability</a>
-              </li>
-              <li>
-                <a href="transparency.html">Transparency</a>
-              </li>
-              <li>
-                <a href="vacancies.html">Jobs at Math0ryx</a>
-              </li>
-              <li>
-                <a href="index.html">Explore Us</a>
-              </li>
+              <li><a href="whatwedo.html">What We Do</a></li>
+              <li><a href="whatwedonotdo.html">What We DO NOT DO</a></li>
+              <li><a href="whatwebelieve.html">What We Believe</a></li>
+              <li><a href="accessibility.html">Accessibility Statement</a></li>
+              <li><a href="compliance.html">Compliance With Legislation</a></li>
+              <li><a href="equalitydiversity.html">Equality and Diversity</a></li>
+              <li><a href="sustainability.html">Sustainability</a></li>
+              <li><a href="transparency.html">Transparency</a></li>
+              <li><a href="vacancies.html">Jobs at Math0ryx</a></li>
+              <li><a href="index.html">Explore Us</a></li>
             </ul>
           </div>
         </div>
         <div id="footerPannelBorder2" class="footerBorder">
           <div id="footerPannel2">
             <ul>
-              <li>
-                <a href="contact.html">Contact Us</a>
-              </li>
-              <li>
-                <a href="faq.html">FAQ</a>
-              </li>
-              <li>
-                <a href="report.html">Report a Problem</a>
-              </li>
-              <li>
-                <a href="suggest.html">Suggest Correction</a>
-              </li>
-              <li>
-                <a href="share.html">Share Your Ideas</a>
-              </li>
-              <li>
-                <a href="contribute.html">Contribute and Volunteer</a>
-              </li>
-              <li>
-                <a href="donate.html">Donate to Our Team</a>
-              </li>
-              <li>
-                <a href="contact.html">Meet Us</a>
-              </li>
-              <li>
-                <a href="support.html">Support in Learning</a>
-              </li>
-              <li>
-                <a href="tutor.html">Personal Tutor</a>
-              </li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="report.html">Report a Problem</a></li>
+              <li><a href="suggest.html">Suggest Correction</a></li>
+              <li><a href="share.html">Share Your Ideas</a></li>
+              <li><a href="contribute.html">Contribute and Volunteer</a></li>
+              <li><a href="donate.html">Donate to Our Team</a></li>
+              <li><a href="contact.html">Meet Us</a></li>
+              <li><a href="support.html">Support in Learning</a></li>
+              <li><a href="tutor.html">Personal Tutor</a></li>
             </ul>
           </div>
         </div>
         <div id="footerPannelBorder3" class="footerBorder">
           <div id="footerPannel3">
             <ul>
-              <li>
-                <a href="makeapayment.html">Make Payment Online</a>
-              </li>
-              <li>
-                <a href="bookcourses.html">Book Courses</a>
-              </li>
-              <li>
-                <a href="donate.html">Donate to the Team</a>
-              </li>
-              <li>
-                <a href="donate.html">Invest Into Team</a>
-              </li>
-              <li>
-                <a href="donate.html">Support The Team</a>
-              </li>
-              <li>
-                <a href="donate.html">Befriend The Team</a>
-              </li>
-              <li>
-                <a href="donate.html">GoFundMe Team</a>
-              </li>
-              <li>
-                <a href="donate.html">Get involved with Team</a>
-              </li>
-              <li>
-                <a href="donate.html">Donate to the Team</a>
-              </li>
+              <li><a href="makeapayment.html">Make Payment Online</a></li>
+              <li><a href="bookcourses.html">Book Courses</a></li>
+              <li><a href="donate.html">Donate to the Team</a></li>
+              <li><a href="donate.html">Invest Into Team</a></li>
+              <li><a href="donate.html">Support The Team</a></li>
+              <li><a href="donate.html">Befriend The Team</a></li>
+              <li><a href="donate.html">GoFundMe Team</a></li>
+              <li><a href="donate.html">Get involved with Team</a></li>
+              <li><a href="donate.html">Donate to the Team</a></li>
             </ul>
           </div>
         </div>
@@ -535,8 +449,7 @@
         </div>
       </div>
     </footer>
-   
-     <script src="JS/signup.js" defer></script>
+
+    <script src="JS/signup.js" defer></script>
   </body>
 </html>
- 
