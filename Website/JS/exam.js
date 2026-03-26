@@ -1,383 +1,172 @@
-<!doctype html>
 
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Quadratics Game - Math0ryx</title>
-    <meta
-      name="description"
-      content="Calculus Game page for Math0ryx website"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="CSS/common.css" />
-    <link rel="stylesheet" href="CSS/quadraticsquiz.css" />
-  </head>
-  <body>
-    <!--Script declaration-->
-    <script src="JS/index.js" async defer></script>
-    <script src="JS/common.js" async defer></script>
-    <script src="JS/quadraticsquiz.js" async defer></script>
-    <script src="JS/quadraticsquiz-save.js" defer></script>
-   
+ 
 
-    
-    <!--Header-->
-    <header id="headerMain">
-      <div id="headerBorder">
-        <div id="headerLogoDiv">
-          <a href="index.html"
-            ><img id="headerLogoImg" src="Images/Header/WebsiteLogo.webp"
-          /></a>
-        </div>
-        <div id="headerTitleDiv">
-          <a href="index.html"
-            ><img id="headerTitleImg" src="Images/Header/Website_Name_V2.png"
-          /></a>
-        </div>
-        <div id="headerSearchDiv">
-          <input id="headerSearchBar" type="search" placeholder="Search.." />
-        </div>
+var score = 0;
+var answered = [];
 
-        <div class="hamburger" id="hamburgerIcon" onclick="toggleHamburger()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+var questions = [
+  {
+    q: "What is 15 to the power of 4?",
+    options: ["50,525", "50,625", "51,625", "45,000"],
+    correct: 1,
+  },
+  {
+    q: "Calculate 15 × 15 × 15 × 15:",
+    options: ["30,625", "50,625", "50,825", "50,615"],
+    correct: 1,
+  },
+  {
+    q: "Evaluate the expression: 15⁴",
+    options: ["60,000", "225,000", "50,625", "3,375"],
+    correct: 2,
+  },
+  {
+    q: "Solve: x = 15 × 15 × 15 × 15",
+    options: ["x = 5,625", "x = 50,625", "x = 50,652", "x = 5,062"],
+    correct: 1,
+  },
+  {
+    q: "What is the product of 225 and 225?",
+    options: ["40,000", "50,225", "50,625", "51,625"],
+    correct: 2,
+  },
+  {
+    q: "What is the value of 15⁴?",
+    options: ["50,555", "50,600", "50,625", "50,650"],
+    correct: 2,
+  },
+  {
+    q: "Find the result: 15 to the 4th power",
+    options: ["50,620", "50,625", "50,630", "50,615"],
+    correct: 1,
+  },
+  {
+    q: "If y = 15⁴, what is y?",
+    options: ["50,625", "3,375", "225", "50,655"],
+    correct: 0,
+  },
+  {
+    q: "Multiply 15 by itself four times:",
+    options: ["15,000", "30,625", "50,625", "60,000"],
+    correct: 2,
+  },
+  {
+    q: "What is the square of 225?",
+    options: ["45,625", "50,625", "55,625", "50,225"],
+    correct: 1,
+  },
+  {
+    q: "Determine the value: 15 × 15 × 225",
+    options: ["45,000", "50,525", "50,625", "50,725"],
+    correct: 2,
+  },
+  {
+    q: "Simplify the exponent: 15⁴",
+    options: ["3,375", "50,625", "5,062", "15,151"],
+    correct: 1,
+  },
+  {
+    q: "What does 15 to the power of 4 equal?",
+    options: ["50,625", "50,635", "50,645", "50,655"],
+    correct: 0,
+  },
+  {
+    q: "Calculate the 4th power of 15:",
+    options: ["50,605", "50,615", "50,625", "50,635"],
+    correct: 2,
+  },
+  {
+    q: "What is (15²)²?",
+    options: ["450", "50,625", "50,525", "3,375"],
+    correct: 1,
+  },
+  {
+    q: "Compute: 15 × 3,375",
+    options: ["50,625", "50,225", "51,625", "49,625"],
+    correct: 0,
+  },
+  {
+    q: "Find the value: 15 * 15 * 15 * 15",
+    options: ["50,600", "50,610", "50,625", "50,630"],
+    correct: 2,
+  },
+  {
+    q: "What is 15⁴ written in standard form?",
+    options: ["15,151", "30,625", "50,625", "60,000"],
+    correct: 2,
+  },
+  {
+    q: "Solve for the exponent: 15 to the 4th",
+    options: ["50,550", "50,575", "50,600", "50,625"],
+    correct: 3,
+  },
+  {
+    q: "What is 15 multiplied by itself 4 times?",
+    options: ["225", "3,375", "50,625", "50,600"],
+    correct: 2,
+  },
+];
 
-        <div id="hamburgerMenu">
-          <div class="headerNavButton">
-            <a href="aboutus.html"><input type="button" value="About us" /></a>
-          </div>
-          <div class="headerNavButton">
-            <a href="lessons.html"><input type="button" value="Lessons" /></a>
-          </div>
-          <div class="headerNavButton">
-            <a href="games.html"><input type="button" value="Games" /></a>
-          </div>
-          <div class="headerNavButton">
-            <a href="login.html"><input type="button" value="LogIn" /></a>
-          </div>
-          <div class="headerNavButton">
-            <a href="ourteam.html"><input type="button" value="OurTeam" /></a>
-          </div>
-          <div class="headerNavButton">
-            <a href="contact.html"><input type="button" value="Contact" /></a>
-          </div>
-        </div>
+function buildQuiz() {
+  var container = document.getElementById("quizContainer");
+  var html = "";
 
-        <div id="headerNavBarDiv">
-          <div class="headerNavButton" id="headerNavButton1">
-            <a href="index.html">
-              <input id="navButton1" type="button" value="Home" />
-            </a>
-          </div>
-          <div class="headerNavButton" id="headerNavButton1">
-            <a href="aboutus.html">
-              <input id="navButton1" type="button" value="About us" />
-            </a>
-          </div>
-          <div class="headerNavButton dropdown" id="headerNavButton1">
-            <a href="lessons.html">
-              <input id="navButton1" type="button" value="Lessons" />
-            </a>
-            <div class="dropdown-content">
-              <div class="headerNavButton">
-                <a href="proportionalreasoning.html"
-                  ><input type="button" value="Proportional Reasoning"
-                /></a>
-              </div>
-              <div class="headerNavButton">
-                <a href="visualalgebra.html"
-                  ><input type="button" value="Visual Algebra"
-                /></a>
-              </div>
-              <div class="headerNavButton">
-                <a href="quadratics.html"
-                  ><input type="button" value="Quadratics"
-                /></a>
-              </div>
-              <div class="headerNavButton">
-                <a href="solvingequasions.html"
-                  ><input type="button" value="Solving Equations"
-                /></a>
-              </div>
-              <div class="headerNavButton">
-                <a href="probabilityandchance.html"
-                  ><input type="button" value="Probability and Chance"
-                /></a>
-              </div>
-              <div class="headerNavButton">
-                <a href="calculus.html"
-                  ><input type="button" value="Calculus"
-                /></a>
-              </div>
-            </div>
-          </div>
-          <div class="headerNavButton dropdown" id="headerNavButton1">
-            <a href="games.html">
-              <input id="navButton1" type="button" value="Games" />
-            </a>
-            <div class="dropdown-content">
-              <div class="headerNavButton">
-                <a href="proportionalreasoningquiz.html"
-                  ><input type="button" value="Proportional Reasoning Quiz"
-                /></a>
-              </div>
-              <div class="headerNavButton">
-                <a href="visualalgebraquiz.html"
-                  ><input type="button" value="Visual Algebra Quiz"
-                /></a>
-              </div>
-              <div class="headerNavButton">
-                <a href="quadraticsquiz.html"
-                  ><input type="button" value="Quadratics Quiz"
-                /></a>
-              </div>
-              <div class="headerNavButton">
-                <a href="solvingequasionsquiz.html"
-                  ><input type="button" value="Solving Equations Quiz"
-                /></a>
-              </div>
-              <div class="headerNavButton">
-                <a href="probabilityandchancequiz.html"
-                  ><input type="button" value="Probability and Chance Quiz"
-                /></a>
-              </div>
-              <div class="headerNavButton">
-                <a href="calculusquiz.html"
-                  ><input type="button" value="Calculus Quiz"
-                /></a>
-              </div>
-            </div>
-          </div>
-           <div id="headerNavBarDiv">
-          <div class="headerNavButton" id="headerNavButton1">
-            <a href="exam.html">
-              <input id="navButton1" type="button" value="Exam" />
-            </a>
-          </div>
-          <div class="headerNavButton" id="headerNavButton1">
-            <a href="login.html">
-              <input id="navButton1" type="button" value="Log In" />
-            </a>
-          </div>
-          <div class="headerNavButton" id="headerNavButton1">
-            <a href="ourteam.html">
-              <input id="navButton1" type="button" value="Our Team" />
-            </a>
-          </div>
-          <div class="headerNavButton" id="headerNavButton1">
-            <a href="contact.html">
-              <input id="navButton1" type="button" value="Contact" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </header>
+  for (var i = 0; i < questions.length; i++) {
+    html += '<div class="quizQuestion" id="q' + i + '">';
+    html += '<p class="quizQText">' + (i + 1) + ". " + questions[i].q + "</p>";
+    html += '<div class="quizOptions">';
+    for (var j = 0; j < questions[i].options.length; j++) {
+      html +=
+        '<button class="quizOption" onclick="checkAnswer(' +
+        i +
+        "," +
+        j +
+        ')">' +
+        questions[i].options[j] +
+        "</button>";
+    }
+    html += "</div></div>";
+  }
 
+  html += '<div id="quizScore">Score: 0 / ' + questions.length + "</div>";
+  container.innerHTML = html;
+}
 
-    <!--Floating Button-->
-    <div class="fabContainer">
-      <button class="fab" onclick="toggleFab()">+</button>
-      <div class="fabOptions">
-        <button onclick="goHome()">🏠</button>
-        <button onclick="goSearch()">🔍</button>
-        <button onclick="toggleDark()">🌙</button>
-      </div>
-    </div>
-    
-     
+function checkAnswer(qIndex, chosen) {
+  if (answered[qIndex]) return;
+  answered[qIndex] = true;
 
-    <!--Body-->
-    <main id="gameMain">
-      <section id="gameSecBorder">
-        <div id="gameSec">
-          <!-- Title -->
-          <div id="gameTitleBorder">
-            <div id="gameTitle">
-              <h4>Quadratics Game</h4>
-            </div>
-          </div>
+  var buttons = document.querySelectorAll("#q" + qIndex + " .quizOption");
+  var correct = questions[qIndex].correct;
 
-          <!-- Rules Description -->
-          <div id="gameDescBorder">
-            <div id="gameDesc">
-              <p>
-                Welcome to the Quadratics Game! Test your understanding of
-                quadratic equations, parabolas, and solution methods in an
-                exciting interactive challenge. Each round presents you with a
-                quadratic problem — analyse the equation carefully, decide
-                whether to factorise, complete the square, or use the quadratic
-                formula, and submit your answer before the timer runs out. You
-                earn points for every correct solution, with bonus points
-                awarded for speed and accurate reasoning. If you answer
-                incorrectly, a helpful hint will guide you toward the correct
-                method or highlight a common mistake. Progress through levels
-                that introduce graph interpretation, discriminants, and
-                real-world quadratic applications. You may skip questions
-                without penalty, but your final score reflects both accuracy and
-                pace. Good luck, and remember: mastering quadratics means
-                understanding the structure of the equation, not just applying a
-                formula mechanically.
-              </p>
-            </div>
-          </div>
+  if (chosen === correct) {
+    score++;
+    buttons[chosen].classList.add("correct");
+  } else {
+    buttons[chosen].classList.add("wrong");
+    buttons[correct].classList.add("correct");
+  }
 
-          <!-- Quiz -->
-          <div id="gameEmbedBorder">
-            <div id="gameEmbedContainer">
-              <div id="quizContainer"></div>
-            </div>
-          </div>
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].disabled = true;
+  }
 
-          <!-- Back to Lesson Button -->
-          <div id="gameButtonBorder">
-            <a href="quadratics.html">
-              <button id="gameButton">Back to Quadratics Lesson</button>
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
+  document.getElementById("quizScore").textContent =
+    "Score: " + score + " / " + questions.length;
+}
 
+window.onload = buildQuiz;
 
-   <!--Footer-->
-      <!--Footer-->
-    <footer id="footerMain">
-      <div id="footerBorder">
-        <div id="footerPannelBorder0" class="footerBorder">
-          <div id="footerPannel0">
-            <div id="footerLogoDiv">
-              <a href="index.html">
-                <img id="footerLogoImg" src="Images/Header/WebsiteLogo.webp" alt="Mathoryx Logo"/>
-              </a>
-            </div>
+function goToSaveScore() {
+ 
+  let quizName = "Exam Quiz";
 
-            <div id="footerTitleDiv">
-              <a href="index.html">
-                <img id="headerTitleImg" src="Images/Header/website_name.png" alt="Mathoryx Website Name"/>
-              </a>
-            </div>
+  // saving on local storage for json to read it
+  localStorage.setItem("currentQuizScore",        score);         
+  localStorage.setItem("currentTotalQuestions",   questions.length); // total questions
+  localStorage.setItem("currentQuizName",         quizName);
 
-          </div>
-        </div>
-        <div id="footerPannelBorder1" class="footerBorder">
-          <div id="footerPannel1">
-            <ul>
-              <li>
-                <a href="whatwedo.html">What We Do</a>
-              </li>
-              <li>
-                <a href="whatwedonotdo.html">What We DO NOT DO</a>
-              </li>
-              <li>
-                <a href="whatwebelieve.html">What We Believe</a>
-              </li>
-              <li>
-                <a href="accessibility.html">Accessibility Statement</a>
-              </li>
-              <li>
-                <a href="compliance.html">Compliance With Legislation</a>
-              </li>
-              <li>
-                <a href="equalitydiversity.html">Equality and Diversity</a>
-              </li>
-              <li>
-                <a href="sustainability.html">Sustainability</a>
-              </li>
-              <li>
-                <a href="transparency.html">Transparency</a>
-              </li>
-              <li>
-                <a href="vacancies.html">Jobs at Math0ryx</a>
-              </li>
-              <li>
-                <a href="index.html">Explore Us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div id="footerPannelBorder2" class="footerBorder">
-          <div id="footerPannel2">
-            <ul>
-              <li>
-                <a href="contact.html">Contact Us</a>
-              </li>
-              <li>
-                <a href="faq.html">FAQ</a>
-              </li>
-              <li>
-                <a href="report.html">Report a Problem</a>
-              </li>
-              <li>
-                <a href="suggest.html">Suggest Correction</a>
-              </li>
-              <li>
-                <a href="share.html">Share Your Ideas</a>
-              </li>
-              <li>
-                <a href="contribute.html">Contribute and Volunteer</a>
-              </li>
-              <li>
-                <a href="donate.html">Donate to Our Team</a>
-              </li>
-              <li>
-                <a href="contact.html">Meet Us</a>
-              </li>
-              <li>
-                <a href="support.html">Support in Learning</a>
-              </li>
-              <li>
-                <a href="tutor.html">Personal Tutor</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div id="footerPannelBorder3" class="footerBorder">
-          <div id="footerPannel3">
-            <ul>
-              <li>
-                <a href="makeapayment.html">Make Payment Online</a>
-              </li>
-              <li>
-                <a href="bookcourses.html">Book Courses</a>
-              </li>
-              <li>
-                <a href="donate.html">Donate to the Team</a>
-              </li>
-              <li>
-                <a href="donate.html">Invest Into Team</a>
-              </li>
-              <li>
-                <a href="donate.html">Support The Team</a>
-              </li>
-              <li>
-                <a href="donate.html">Befriend The Team</a>
-              </li>
-              <li>
-                <a href="donate.html">GoFundMe Team</a>
-              </li>
-              <li>
-                <a href="donate.html">Get involved with Team</a>
-              </li>
-              <li>
-                <a href="donate.html">Donate to the Team</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div id="footerCopyrightBorderDiv" class="footerBorder">
-        <div id="footerCopyrightDiv">
-          <p>
-            Website Math0ryx is protected by Copyright, and if you copy it we
-            will slap you on the wrist
-          </p>
-        </div>
-      </div>
-    </footer>
-   
-     <script src="JS/signup.js" defer></script>
-  </body>
-</html>
+  // going to sacescore page   
+  window.location.href = "savescore.html";
+}
+

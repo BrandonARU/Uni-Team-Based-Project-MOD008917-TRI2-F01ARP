@@ -168,6 +168,12 @@
 
 
 /*section2*/
+/* clickable and leads to savesecore */
+#indexSec2Border {
+  cursor: pointer;
+}
+
+
 #indexSec2Border {
   background: linear-gradient(
     to bottom,
