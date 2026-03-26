@@ -18,23 +18,23 @@
    
 
     <!--Header-->
-    <header id="headerMain">
+     <header id="headerMain">
       <div id="headerBorder">
         <div id="headerLogoDiv">
-          <a href="index.html"
-            ><img id="headerLogoImg" src="Images/Header/WebsiteLogo.webp"
-          /></a>
+          <a href="index.html">
+            <img id="headerLogoImg" src="Images/Header/WebsiteLogo.webp" alt="Math0ryx official logo" />
+          </a>
         </div>
         <div id="headerTitleDiv">
-          <a href="index.html"
-            ><img id="headerTitleImg" src="Images/Header/Website_Name_V2.png"
-          /></a>
+          <a href="index.html">
+            <img id="headerTitleImg" src="Images/Header/Website_Name_V2.png" alt="Math0ryx website name and brand" />
+          </a>
         </div>
         <div id="headerSearchDiv">
-          <input id="headerSearchBar" type="search" placeholder="Search.." />
+          <input id="headerSearchBar" type="search" placeholder="Search.." aria-label="Search the Math0ryx website" />
         </div>
 
-        <div class="hamburger" id="hamburgerIcon" onclick="toggleHamburger()">
+        <div class="hamburger" id="hamburgerIcon" onclick="toggleHamburger()" aria-label="Toggle navigation menu" role="button" tabindex="0">
           <span></span>
           <span></span>
           <span></span>
@@ -42,31 +42,36 @@
 
         <div id="hamburgerMenu">
           <div class="headerNavButton">
+            <a href="index.html"><input type="button" value="Home" /></a>
+          </div>
+          <div class="headerNavButton">
             <a href="aboutus.html"><input type="button" value="About us" /></a>
           </div>
           <div class="headerNavButton">
             <a href="lessons.html"><input type="button" value="Lessons" /></a>
           </div>
           <div class="headerNavButton">
-            <a href="games.html"><input type="button" value="Games" /></a>
+            <a href="games.html"><input type="button" value="Quizzes" /></a>
           </div>
           <div class="headerNavButton">
-            <a href="login.html"><input type="button" value="LogIn" /></a>
+            <a href="login.html"><input type="button" value="Log In" /></a>
           </div>
           <div class="headerNavButton">
-            <a href="ourteam.html"><input type="button" value="OurTeam" /></a>
+            <a href="ourteam.html"><input type="button" value="Our Team" /></a>
           </div>
           <div class="headerNavButton">
             <a href="contact.html"><input type="button" value="Contact" /></a>
           </div>
+          <div class="headerNavButton">
+            <a href="exam.html"><input type="button" value="Exam" /></a>
+          </div>
+          <div class="headerNavButton">
+            <a href="savescore.html"><input type="button" value="Leader Board" /></a>
+          </div>
         </div>
 
         <div id="headerNavBarDiv">
-          <div class="headerNavButton" id="headerNavButton1">
-            <a href="index.html">
-              <input id="navButton1" type="button" value="Home" />
-            </a>
-          </div>
+          
           <div class="headerNavButton" id="headerNavButton1">
             <a href="aboutus.html">
               <input id="navButton1" type="button" value="About us" />
@@ -83,28 +88,28 @@
                 </a>
               </div>
               <div class="headerNavButton">
-                <a href="visualalgebra.html"
-                  ><input type="button" value="Visual Algebra"/>
+                <a href="visualalgebra.html">
+                  <input type="button" value="Visual Algebra"/>
                 </a>
               </div>
               <div class="headerNavButton">
-                <a href="quadratics.html"
-                  ><input type="button" value="Quadratics"/>
+                <a href="quadratics.html">
+                  <input type="button" value="Quadratics"/>
                 </a>
               </div>
               <div class="headerNavButton">
-                <a href="solvingequasions.html"
-                  ><input type="button" value="Solving Equations"/>
+                <a href="solvingequasions.html">
+                  <input type="button" value="Solving Equations"/>
                 </a>
               </div>
               <div class="headerNavButton">
-                <a href="probabilityandchance.html"
-                  ><input type="button" value="Probability and Chance"/>
+                <a href="probabilityandchance.html">
+                  <input type="button" value="Probability and Chance"/>
                 </a>
               </div>
               <div class="headerNavButton">
-                <a href="calculus.html"
-                  ><input type="button" value="Calculus"/>
+                <a href="calculus.html">
+                  <input type="button" value="Calculus"/>
                 </a>
               </div>
             </div>
@@ -115,57 +120,64 @@
             </a>
             <div class="dropdown-content">
               <div class="headerNavButton">
-                <a href="proportionalreasoningquiz.html"
-                  ><input type="button" value="Proportional Reasoning Quiz"/>
+                <a href="proportionalreasoningquiz.html">
+                  <input type="button" value="Proportional Reasoning Quiz"/>
                 </a>
               </div>
               <div class="headerNavButton">
-                <a href="visualalgebraquiz.html"
-                  ><input type="button" value="Visual Algebra Quiz"/>
+                <a href="visualalgebraquiz.html">
+                  <input type="button" value="Visual Algebra Quiz"/>
                 </a>
               </div>
               <div class="headerNavButton">
-                <a href="quadraticsquiz.html"
-                  ><input type="button" value="Quadratics Quiz"/>
+                <a href="quadraticsquiz.html">
+                  <input type="button" value="Quadratics Quiz"/>
                 </a>
               </div>
               <div class="headerNavButton">
-                <a href="solvingequasionsquiz.html"
-                  ><input type="button" value="Solving Equations Quiz"/>
+                <a href="solvingequasionsquiz.html">
+                  <input type="button" value="Solving Equations Quiz"/>
                 </a>
               </div>
               <div class="headerNavButton">
-                <a href="probabilityandchancequiz.html"
-                  ><input type="button" value="Probability and Chance Quiz"/>
+                <a href="probabilityandchancequiz.html">
+                  <input type="button" value="Probability and Chance Quiz"/>
                 </a>
               </div>
               <div class="headerNavButton">
-                <a href="calculusquiz.html"
-                  ><input type="button" value="Calculus Quiz"/>
+                <a href="calculusquiz.html">
+                  <input type="button" value="Calculus Quiz"/>
                 </a>
               </div>
             </div>
           </div>
-           <div id="headerNavBarDiv">
-          <div class="headerNavButton" id="headerNavButton1">
-            <a href="exam.html">
-              <input id="navButton1" type="button" value="Exam" />
-            </a>
-          </div>
-          <div class="headerNavButton" id="headerNavButton1">
-            <a href="login.html">
-              <input id="navButton1" type="button" value="Log In" />
-            </a>
-          </div>
-          <div class="headerNavButton" id="headerNavButton1">
-            <a href="ourteam.html">
-              <input id="navButton1" type="button" value="Our Team" />
-            </a>
-          </div>
-          <div class="headerNavButton" id="headerNavButton1">
-            <a href="contact.html">
-              <input id="navButton1" type="button" value="Contact" />
-            </a>
+          <div id="headerNavBarDiv">
+            <div class="headerNavButton" id="headerNavButton1">
+              <a href="exam.html">
+                <input id="navButton1" type="button" value="Exam" />
+              </a>
+            </div>
+            <div id="headerNavBarDiv">
+            <div class="headerNavButton" id="headerNavButton1">
+              <a href="savescore.html">
+                <input id="navButton1" type="button" value="Leader Board" />
+              </a>
+            </div>
+            <div class="headerNavButton" id="headerNavButton1">
+              <a href="login.html">
+                <input id="navButton1" type="button" value="Log In" />
+              </a>
+            </div>
+            <div class="headerNavButton" id="headerNavButton1">
+              <a href="ourteam.html">
+                <input id="navButton1" type="button" value="Our Team" />
+              </a>
+            </div>
+            <div class="headerNavButton" id="headerNavButton1">
+              <a href="contact.html">
+                <input id="navButton1" type="button" value="Contact" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

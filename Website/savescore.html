@@ -1,28 +1,22 @@
 <!doctype html>
 <html lang="en">
-<html>
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Probability and Chance Quiz - Math0ryx</title>
-    <meta
-      name="description"
-      content="Probability and Chance Quiz page for Math0ryx website"
-    />
+    <title>Save Score, Bro, Learn Maths and Have Fun</title>
+    <meta name="description" content="Home page for Math0ryx website" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="CSS/common.css" />
-    <link rel="stylesheet" href="CSS/quadraticsquiz.css" />
+    <link rel="stylesheet" href="CSS/quadraticsquiz.css">
+    <link rel="stylesheet" href="CSS/savescore.css">
   </head>
+
   <body>
-    <!--Script declaration-->
     <script src="JS/index.js" async defer></script>
     <script src="JS/common.js" async defer></script>
-    <script src="JS/probabilityandchancequiz.js" async defer></script>
-   
-
-    <!--Header-->
-   
+    <script src="JS/signup.js" defer></script>
     
+
      <header id="headerMain">
       <div id="headerBorder">
         <div id="headerLogoDiv">
@@ -187,82 +181,79 @@
         </div>
       </div>
     </header>
+    
 
-    <!--Floating Button-->
     <div class="fabContainer">
-      <button class="fab" onclick="toggleFab()">+</button>
+      <button class="fab" onclick="toggleFab()" aria-label="Open floating action menu">+</button>
       <div class="fabOptions">
-        <button onclick="goHome()">🏠</button>
-        <button onclick="goSearch()">🔍</button>
-        <button onclick="toggleDark()">🌙</button>
+        <button onclick="goHome()" aria-label="Go to homepage">🏠</button>
+        <button onclick="goSearch()" aria-label="Focus search bar">🔍</button>
+        <button onclick="toggleDark()" aria-label="Toggle dark mode">🌙</button>
       </div>
     </div>
-    
-     
 
-    <!--Body-->
-    <main id="quizMain">
-      <section id="quizSecBorder">
-        <div id="quizSec">
-          <!-- Title -->
-          <div id="quizTitleBorder">
-            <div id="quizTitle">
-              <h4>Probability and Chance Quiz</h4>
-            </div>
-          </div>
 
-          <!-- Rules Description -->
-          <div id="quizDescBorder">
-            <div id="quizDesc">
-              <p>
-                Welcome to the Probability and Chance quiz! Test your
-                understanding of likelihood, outcomes, and event relationships
-                in a fun and interactive challenge. Each round presents you with
-                a probability scenario — read it carefully, calculate the
-                chances, and choose the correct answer before the timer runs
-                out. You earn points for every correct solution, with bonus
-                points awarded for accuracy and speed. If you answer
-                incorrectly, a helpful hint will appear to guide you toward the
-                correct reasoning. Progress through levels that introduce
-                compound events, conditional probability, and real-world problem
-                solving. There are no penalties for skipping a question, but
-                your final score reflects both precision and pace. Good luck,
-                and remember: probability is about logical thinking, not
-                guessing!
-              </p>
-            </div>
-          </div>
 
-          <!-- Quiz Embed -->
-          <div id="quiz">
-            <div id="quizEmbedContainer">
-            </div>
-          </div>
 
-          <!-- Section Buttons -->
-<div id="buttonSection">
+  <main id="gameMain">
+    <section id="gameSecBorder">
+      <div id="gameSec">
 
-  <!-- Back to Lesson Button -->
-  <div id="gameButtonBorder">
-    <a href="probabilityandchance.html">
-      <button id="gameButton">Back to Probability and Chance Lesson</button>
-    </a>
-  </div>
-
-  <!-- Save score -->
-  <button id="gameButton2" onclick="goToSaveScore()">Save Score, Bro!</button>
-
-</div>
-
-</div>
-         
-
+        <div id="gameTitleBorder">
+          <h4>Save Your Score</h4>
         </div>
-      </section>
-    </main>
+
+        <div id="saveForm">
+          <h3>Enter your nickname and avatar</h3>
+          
+          <div>
+            <p>Choose Avatar:</p>
+            <img id="avatarShow" src="https://via.placeholder.com/120/006600/ffffff?text=👤" width="120" height="120" style="border-radius:50%; border:4px solid green;">
+            <br><br>
+            <input type="file" id="avatarFile" accept="image/*">
+            <button id="randomBtn">Random Avatar</button>
+          </div>
+
+          <div>
+            <p>Your Nickname:</p>
+            <input type="text" id="nick" placeholder="Type nickname here" maxlength="12">
+            <p id="errorMsg" style="color:red;"></p>
+          </div>
+
+          <button id="saveBtn">SAVE MY SCORE</button>
+        </div>
+
+        <div id="leaderboard">
+          <h3>Leaderboard</h3>
+          <table id="scoreTable">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Avatar</th>
+                <th>Nickname</th>
+                <th>Score</th>
+                <th>%</th>
+                <th>League</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+
+        <div style="text-align:center; margin-top:30px;">
+          <a href="games.html">
+            <button id="gameButton">Back to Quizzes</button>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
 
 
-      <!--Footer-->
+  <script src="JS/savescore.js" defer></script>
+
+  <!--Footer-->
     <footer id="footerMain">
       <div id="footerBorder">
         <div id="footerPannelBorder0" class="footerBorder">
@@ -396,6 +387,6 @@
         </div>
       </div>
     </footer>
-   
-  </body>
+
+</body>
 </html>

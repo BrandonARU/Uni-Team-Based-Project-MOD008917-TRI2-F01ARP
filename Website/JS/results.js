@@ -1,45 +1,55 @@
-function loadLeaderboard() {
-  const tbody = document.getElementById("leaderboardBody");
-  if (!tbody) return;
 
-  let leaderboard =
-    JSON.parse(localStorage.getItem("math0ryxLeaderboard")) || [];
+function getLeague(pct) {
+  if (pct <= 40) return "fail";
+  if (pct <= 50) return "pass";
+  if (pct <= 60) return "bronze";
+  if (pct <= 80) return "silver";
+  return "gold";
+}
 
-  leaderboard = leaderboard.slice(0, 21); //first 21 scores//
+function renderLeaderboard() {
+  let data = JSON.parse(localStorage.getItem("math0ryxLeaderboard") || "[]");
 
+  // Sort by percentage descendingg
+  data.sort((a, b) => b.percentage - a.percentage);
+
+  // top 4 lucky guys with higheest percentase of score  
+  const topContainer = document.getElementById("top4Container");
+  topContainer.innerHTML = "";
+  const top4 = data.slice(0, 4);
+
+  top4.forEach(player => {
+    const div = document.createElement("div");
+    div.className = "top-card";
+    div.innerHTML = `
+      <img src="${player.avatar}" alt="${player.nickname}">
+      <h5>${player.nickname}</h5>
+      <p><strong>${player.score}</strong> points • ${player.percentage}%</p>
+      <span class="league league-${player.league}">${player.league.toUpperCase()}</span>
+    `;
+    topContainer.appendChild(div);
+  });
+
+  //  table
+  const tbody = document.getElementById("leaderBody");
   tbody.innerHTML = "";
 
-  leaderboard.forEach((entry, index) => {
-    const percentage = (entry.score / questions.length) * 100;
-    let medal = "None";
-    let medalClass = "medal-none";
+  if (data.length === 0) {
+    document.getElementById("emptyMsg").style.display = "block";
+    return;
+  }
 
-    if (percentage >= 85) {
-      medal = "Gold";
-      medalClass = "medal-gold";
-    } else if (percentage >= 67) {
-      medal = "Silver";
-      medalClass = "medal-silver";
-    } else if (percentage >= 50) {
-      medal = "Bronze";
-      medalClass = "medal-bronze";
-    }
-
+  data.forEach(player => {
     const row = document.createElement("tr");
     row.innerHTML = `
-      <td>${index + 1}</td>
-      <td>${entry.name}</td>
-      <td>${entry.score} / ${questions.length}</td>
-      <td>${entry.date}</td>
-      <td class="${medalClass}">${medal}</td>
+      <td><img src="${player.avatar}" alt=""></td>
+      <td><strong>${player.nickname}</strong></td>
+      <td style="text-align:center;">${player.score}</td>
+      <td style="text-align:center; font-weight:bold;">${player.percentage}%</td>
+      <td style="text-align:center;"><span class="league league-${player.league}">${player.league.toUpperCase()}</span></td>
     `;
     tbody.appendChild(row);
   });
-
-  if (leaderboard.length === 0) {
-    tbody.innerHTML =
-      '<tr><td colspan="5">No scores. Play the game, kettle!</td></tr>';
-  }
 }
 
-window.addEventListener("load", loadLeaderboard);
+window.onload = renderLeaderboard;

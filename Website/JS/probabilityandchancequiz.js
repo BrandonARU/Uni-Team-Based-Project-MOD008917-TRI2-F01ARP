@@ -3,103 +3,103 @@ var answered = [];
 
 var questions = [
   {
-    q: "What is 7 × 8?",
-    options: ["54", "56", "63", "48"],
+    q: "What is 15 to the power of 4?",
+    options: ["50,525", "50,625", "51,625", "45,000"],
     correct: 1,
   },
   {
-    q: "Solve: x + 5 = 12",
-    options: ["x = 5", "x = 7", "x = 17", "x = 6"],
+    q: "Calculate 15 × 15 × 15 × 15:",
+    options: ["30,625", "50,625", "50,825", "50,615"],
     correct: 1,
   },
   {
-    q: "What is 15% of 200?",
-    options: ["25", "20", "30", "15"],
+    q: "Evaluate the expression: 15⁴",
+    options: ["60,000", "225,000", "50,625", "3,375"],
     correct: 2,
   },
   {
-    q: "Simplify: 3x + 2x",
-    options: ["6x", "5x", "5x²", "3x²"],
+    q: "Solve: x = 15 × 15 × 15 × 15",
+    options: ["x = 5,625", "x = 50,625", "x = 50,652", "x = 5,062"],
     correct: 1,
   },
   {
-    q: "What is the area of a rectangle 6cm × 4cm?",
-    options: ["10cm²", "20cm²", "24cm²", "28cm²"],
+    q: "What is the product of 225 and 225?",
+    options: ["40,000", "50,225", "50,625", "51,625"],
     correct: 2,
   },
   {
-    q: "What is √144?",
-    options: ["11", "14", "12", "13"],
+    q: "What is the value of 15⁴?",
+    options: ["50,555", "50,600", "50,625", "50,650"],
     correct: 2,
   },
   {
-    q: "Solve: 2x - 3 = 11",
-    options: ["x = 4", "x = 7", "x = 8", "x = 5"],
+    q: "Find the result: 15 to the 4th power",
+    options: ["50,620", "50,625", "50,630", "50,615"],
     correct: 1,
   },
   {
-    q: "What is 3² + 4²?",
-    options: ["25", "14", "49", "30"],
+    q: "If y = 15⁴, what is y?",
+    options: ["50,625", "3,375", "225", "50,655"],
     correct: 0,
   },
   {
-    q: "A bag has 3 red, 2 blue, 5 green balls. What is the probability of picking red?",
-    options: ["3/5", "1/2", "3/10", "1/3"],
+    q: "Multiply 15 by itself four times:",
+    options: ["15,000", "30,625", "50,625", "60,000"],
     correct: 2,
   },
   {
-    q: "What is the perimeter of a square with side 7cm?",
-    options: ["21cm", "28cm", "49cm", "14cm"],
+    q: "What is the square of 225?",
+    options: ["45,625", "50,625", "55,625", "50,225"],
     correct: 1,
   },
   {
-    q: "Expand: 3(2x + 4)",
-    options: ["6x + 4", "5x + 7", "6x + 12", "2x + 12"],
+    q: "Determine the value: 15 × 15 × 225",
+    options: ["45,000", "50,525", "50,625", "50,725"],
     correct: 2,
   },
   {
-    q: "What is the gradient of y = 3x + 5?",
-    options: ["5", "3", "8", "1"],
+    q: "Simplify the exponent: 15⁴",
+    options: ["3,375", "50,625", "5,062", "15,151"],
     correct: 1,
   },
   {
-    q: "Factorise: x² + 5x + 6",
-    options: ["(x+2)(x+3)", "(x+1)(x+6)", "(x+3)(x+2)", "(x-2)(x-3)"],
+    q: "What does 15 to the power of 4 equal?",
+    options: ["50,625", "50,635", "50,645", "50,655"],
     correct: 0,
   },
   {
-    q: "What is 0.3 as a fraction in its simplest form?",
-    options: ["3/100", "1/3", "3/10", "30/100"],
+    q: "Calculate the 4th power of 15:",
+    options: ["50,605", "50,615", "50,625", "50,635"],
     correct: 2,
   },
   {
-    q: "The mean of 4, 7, 9, 10, 5 is:",
-    options: ["6", "7", "8", "9"],
+    q: "What is (15²)²?",
+    options: ["450", "50,625", "50,525", "3,375"],
     correct: 1,
   },
   {
-    q: "What is 2³ × 2²?",
-    options: ["2⁵", "2⁶", "4⁵", "2¹"],
+    q: "Compute: 15 × 3,375",
+    options: ["50,625", "50,225", "51,625", "49,625"],
     correct: 0,
   },
   {
-    q: "Solve: 5x = 35",
-    options: ["x = 6", "x = 8", "x = 7", "x = 5"],
+    q: "Find the value: 15 * 15 * 15 * 15",
+    options: ["50,600", "50,610", "50,625", "50,630"],
     correct: 2,
   },
   {
-    q: "What is the volume of a cube with side 3cm?",
-    options: ["9cm³", "18cm³", "27cm³", "12cm³"],
+    q: "What is 15⁴ written in standard form?",
+    options: ["15,151", "30,625", "50,625", "60,000"],
     correct: 2,
   },
   {
-    q: "Which is the largest: 0.6, 3/5, 58%, 0.605?",
-    options: ["0.6", "3/5", "58%", "0.605"],
+    q: "Solve for the exponent: 15 to the 4th",
+    options: ["50,550", "50,575", "50,600", "50,625"],
     correct: 3,
   },
   {
-    q: "Solve: x/4 = 5",
-    options: ["x = 1", "x = 9", "x = 20", "x = 15"],
+    q: "What is 15 multiplied by itself 4 times?",
+    options: ["225", "3,375", "50,625", "50,600"],
     correct: 2,
   },
 ];
@@ -156,7 +156,7 @@ window.onload = buildQuiz;
 
 function goToSaveScore() {
  
-  let quizName = "Quadratics Quiz";
+  let quizName = "Probability and Chance Quiz";
 
   // saving on local storage for json to read it
   localStorage.setItem("currentQuizScore",        score);         
