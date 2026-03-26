@@ -34,3 +34,8 @@ audio.onended = () => {
   video.currentTime = 0;    
   audio.currentTime = 0;     
 };
+
+//for leading section2 to savescore page on click
+document.getElementById('indexSec2Border').addEventListener('click', () => {
+  window.location.href = 'savescore.html';
+});

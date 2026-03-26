@@ -54,33 +54,9 @@
   </head> 
   <body>
 
-    <h1>Page Not Found</h1>
+    <h1>Scan QR to Make a Payment<br> Thank you!</h1>
 
-    <video id="videoWelcomePage" autoplay muted loop playsinline aria-label="Page not found animation">
-      <source src="Videos/video.mp4" type="video/mp4" />
-    </video>
-
-    <audio id="audioWelcomePage" autoplay loop aria-label="Background music">
-      <source src="Sounds/pagenotfound.mp3" type="audio/mpeg" />
-    </audio>
-
-    <a id="returnHomeBtn" href="index.html">Return Home</a>
-
-    <script>
-      const audio = document.getElementById('audioWelcomePage');
-
-      // auto plays on any interaaction  
-      function unlockAudio() {
-        audio.play().catch(() => {});
-        document.removeEventListener('click', unlockAudio);
-        document.removeEventListener('keydown', unlockAudio);
-        document.removeEventListener('touchstart', unlockAudio);
-      }
-
-      document.addEventListener('click', unlockAudio);
-      document.addEventListener('keydown', unlockAudio);
-      document.addEventListener('touchstart', unlockAudio);
-    </script>
+    <img src="Images/Header/qrcode.png" alt="Logo" />
 
   </body>
 </html>
